@@ -1,0 +1,150 @@
+newmtl buildings_01
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\SanFran_wallDiffuse.png
+illum 2
+
+newmtl roads_01
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\SanFran_roadDiffuse_repeat.png
+illum 2
+
+newmtl trees_01
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\trees_01.png
+illum 2
+
+newmtl terrain_15
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture15.png
+illum 2
+
+newmtl terrain_14
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture14.png
+illum 2
+
+newmtl terrain_1
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture1.png
+illum 2
+
+newmtl terrain_254
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\Water_02.png
+illum 2
+
+newmtl terrain_253
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\Water_01.png
+illum 2
+
+newmtl terrain_9
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture9.png
+illum 2
+
+newmtl terrain_3
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture3.png
+illum 2
+
+newmtl terrain_0
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture0.png
+illum 2
+
+newmtl rail_01
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\London_London_railDiffuse_repeat.png
+illum 2
+
+newmtl landmark_us_ny_manhattanbridge_Buildings_1_03131021030231_landmark_us_ny_manhattanbridge
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_williamsburgbridge_Buildings_1_03131021030233_landmark_us_ny_williamsburgbridge
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_manhattanbridge_Buildings_4_03131021030230_landmark_us_ny_manhattanbridge
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_newyorkcityhall_Buildings_2_03131021030230_landmark_us_ny_newyorkcityhall
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_tweedcourthouse_Buildings_1_03131021030230_landmark_us_ny_tweedcourthouse
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_brooklynbridge_Buildings_0_03131021030230_landmark_us_ny_brooklynbridge
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_brooklynbridge_Buildings_0_03131021030221_landmark_us_ny_brooklynbridge
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl terrain_7
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture7.png
+illum 2
+
+newmtl terrain_5
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture5.png
+illum 2
+
+newmtl terrain_2
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture2.png
+illum 2
+
+newmtl trees_top_01
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\trees_top_01.png
+illum 2
+
+newmtl terrain_12
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture12.png
+illum 2
+
+newmtl terrain_10
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\TerrainTexture10.png
+illum 2
+
+newmtl landmark_us_ny_boats02_Buildings_2_03131021030212_landmark_us_ny_boats02
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_911memorial_Buildings_1_03131021030212_landmark_us_ny_911memorial
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_freedomtower_Buildings_0_03131021030212_landmark_us_ny_freedomtower
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_castleclinton_Buildings_1_03131021030203_landmark_us_ny_castleclinton
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
+newmtl landmark_us_ny_newyorkstockexchange_Buildings_0_03131021030203_landmark_us_ny_newyorkstockexchange
+Kd 1 1 1
+map_Kd C:\Users\ricky\3D Objects\New York City\.png
+illum 2
+
