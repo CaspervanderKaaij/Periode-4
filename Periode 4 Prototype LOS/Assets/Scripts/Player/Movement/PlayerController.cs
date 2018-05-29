@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour
         HookShotEnd
     }
     //CODE VAN CASPER
-    [Header("Door Casper (ik heb niets tough)")]
-    [HideInInspector]//ik verstop het namelijk. Dus het wordt ontzichtbaar lol.
+    [Header("Door Casper")]
+    [Range(0,3)]
+    public float hookShotJumpStrength = 1;
+    [HideInInspector]
     public State curState = State.Normal;
     [HideInInspector]
     public bool hookShotJumping = false;
@@ -30,9 +32,12 @@ public class PlayerController : MonoBehaviour
 
     public void HookShotStart(Vector3 goal, float speed)
     {
-        curState = State.HookShot;
-        hookShotGoal = goal + new Vector3(0, 1, 0);
-        hookShotSpeed = speed;
+        if (goal.y > transform.position.y)
+        {
+            curState = State.HookShot;
+            hookShotGoal = goal + new Vector3(0, 1, 0);
+            hookShotSpeed = speed;
+        }
     }
 
     void HookShoting()
@@ -59,9 +64,10 @@ public class PlayerController : MonoBehaviour
 
     void HookShotJump()
     {
-        body.velocity = velocity * 1.25f;
+        body.velocity = velocity * hookShotJumpStrength;
         hookShotJumping = true;
         speed /= 2;
+        FindObjectOfType<Manager>().TimeStop(0.1f, 0f);
         curState = State.Normal;
     }
 

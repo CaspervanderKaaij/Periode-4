@@ -13,16 +13,32 @@ public class EnemyLOS : LOS
         Spotted
     }
     private State curState = State.Normal;
-    private float timer = 0;
+    [HideInInspector]
+    public float timer = 0;
 
     public GameObject hitBox;
+    public float seeTime = 1;
+    public float loseTime = 5;
 
 
     void Update()
     {
-//        Debug.Log(spotted);
         Look();
+        InOutSightActivator();
+        IsClose();
+        IsSpotted();
+        Die();
+    }
 
+    void IsClose(){
+        if (Vector3.Distance(transform.position, target.position) < sightRange / 3)
+        {
+            curState = State.Spotted;
+        }
+
+    }
+
+    void InOutSightActivator(){
         if (spotted == true)
         {
             IsInSight();
@@ -31,21 +47,24 @@ public class EnemyLOS : LOS
         {
             IsOutSight();
         }
-        if (Vector3.Distance(transform.position, target.position) < sightRange / 3)
-        {
-            curState = State.Spotted;
-        }
 
+    }
+
+    void IsSpotted()
+    {
         if (curState == State.Spotted)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        //hardcoded omdat geen tijd ;)
+    }
 
-        if(hitBox == null){
+    void Die(){
+        if (hitBox == null)
+        {
             Destroy(transform.parent.gameObject);
         }
+
     }
 
     public void IsInSight()
@@ -58,7 +77,7 @@ public class EnemyLOS : LOS
                 break;
 
             case State.InSight:
-                timer += Time.deltaTime;
+                timer += Time.deltaTime * seeTime;
                 if (timer > 1)
                 {
                     curState = State.Spotted;
@@ -70,11 +89,6 @@ public class EnemyLOS : LOS
                 curState = State.InSight;
                 break;
         }
-        // if(curState == State.Normal){
-        // timer = 0;
-        // curState = State.InSight;
-        //}
-
     }
 
     public void IsOutSight()
@@ -86,7 +100,7 @@ public class EnemyLOS : LOS
             //uhm niets eigenlijk.. lol waarom plaats ik dit?
             //break;
             case State.InSight:
-                timer = 5;
+                timer = loseTime * (timer / seeTime);
                 curState = State.OutSight;
                 break;
             case State.OutSight:

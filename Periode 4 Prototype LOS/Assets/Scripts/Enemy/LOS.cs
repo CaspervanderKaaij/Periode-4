@@ -20,11 +20,11 @@ public class LOS : MonoBehaviour
 
     public void Look()
     {
-         //Debug.DrawRay(transform.position,(target.position - transform.position));           // Activeer deze lijn code om te zien hoe de LOS werkt in raycast vorm!
+        //Debug.DrawRay(transform.position,(target.position - transform.position));           // Activeer deze lijn code om te zien hoe de LOS werkt in raycast vorm!
         //Debug.Log(Vector3.Dot(target.position - transform.position, transform.forward) / Vector3.Distance(transform.position,target.position));
         //Debug.Log(Vector3.Dot(target.position - transform.position, transform.forward) + "Distance >" + Vector3.Distance(transform.position,target.position));
         float losAngle = Vector3.Dot(target.position - transform.position, transform.forward) / Vector3.Distance(transform.position, target.position);
-        losAngle = Vector3.Distance(new Vector3(losAngle,0,0), new Vector3(1,0,0));
+        losAngle = Vector3.Distance(new Vector3(losAngle, 0, 0), new Vector3(1, 0, 0));
         if (Vector3.Distance(transform.position, target.position) < sightRange)
         {
             if (losAngle * 180 < sightAngle)
@@ -45,6 +45,10 @@ public class LOS : MonoBehaviour
                     spotted = false;
                 }
 
+            }
+            else
+            {
+                spotted = false;
             }
         }
         else

@@ -39,9 +39,12 @@ public class RaycastWeapons : MonoBehaviour
     {
         RaycastHit hit;
 
+        //Door Casper:       (ik pak manager niet in start want dit is maar 1 frame actief. Daarom maakt dat niet zo veel uit)      Also deze code in clean asf omg!
+        FindObjectOfType<Manager>().TimeStop(0.1f,0);
+
         if (Physics.Raycast(playerCam.position, playerCam.forward, out hit, range))
         {
-            print("You hit: " + hit.transform.name);
+            //print("You hit: " + hit.transform.name); // Casper - Deed ze uit omdat ze irritant waren.
 
             if (hit.transform.GetComponent<Target>())
             {
@@ -51,7 +54,7 @@ public class RaycastWeapons : MonoBehaviour
             }
             else
             {
-                print(hit.transform.name + " doesn't have a target script.");
+               // print(hit.transform.name + " doesn't have a target script."); // Casper - Deed ze uit omdat ze irritant waren.
             }
 
             ammoLeft -= 1;
@@ -69,7 +72,7 @@ public class RaycastWeapons : MonoBehaviour
             shootAudioSource.Play();
         } else
         {
-            print("shootAudioSource or shootAudioClip is null.");
+           // print("shootAudioSource or shootAudioClip is null."); // Casper - Deed ze uit omdat ze irritant waren.
         }
 
 
@@ -80,7 +83,7 @@ public class RaycastWeapons : MonoBehaviour
         }
         else
         {
-            print("shootAnimationPlayback or shootAnimationClip is null.");
+            //print("shootAnimationPlayback or shootAnimationClip is null."); // Casper - Deed ze uit omdat ze irritant waren.
         }
     }
 
