@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class EnemyLOS : LOS
 {
-    private enum State
+    public enum State
     {
         Normal,
         InSight,
         OutSight,
         Spotted
     }
-    private State curState = State.Normal;
+    [HideInInspector]
+    public State curState = State.Normal;
     [HideInInspector]
     public float timer = 0;
 

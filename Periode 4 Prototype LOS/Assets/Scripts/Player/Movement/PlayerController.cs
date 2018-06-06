@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     }
     //CODE VAN CASPER
     [Header("Door Casper")]
-    [Range(0,3)]
+    [Range(0, 3)]
     public float hookShotJumpStrength = 1;
     [HideInInspector]
     public State curState = State.Normal;
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         mayJump = false;
         //jumpCurrent = 0;
         // if (transform.position != hookShotGoal)
-        if (Vector3.Distance(transform.position, hookShotGoal) > 1)
+        if (Vector3.Distance(transform.position, hookShotGoal) > 2)
         {
             if (hookShotJumping == false)
             {
@@ -110,18 +110,34 @@ public class PlayerController : MonoBehaviour
             Move();
         }
     }
-
-    //collision for jump reset
-    private void OnCollisionEnter(Collision c)
-    {
-        // if (curState == State.Normal)
-        // {//Toegevoegt door Casper.. en ook weer weg gedaan.. het is buggy anders
-        if (c.gameObject.tag == "Terrain" || c.gameObject.tag == "Car")
+    /*
+        //collision for jump reset
+        private void OnCollisionEnter(Collision c)
         {
-            jumpCurrent = 0;
+            // if (curState == State.Normal)
+            // {//Toegevoegt door Casper.. en ook weer weg gedaan.. het is buggy anders
+            if (c.gameObject.tag == "Terrain" || c.gameObject.tag == "Car")
+            {
+                jumpCurrent = 0;
+                mayJump = true;
+            }
+            //}
+        }
+     */
+
+    //Casper variant
+
+    void CheckFloor()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2))
+        {
             mayJump = true;
         }
-        //}
+        else
+        {
+            mayJump = false;
+        }
     }
 
     //movement back-front & left-right
@@ -135,6 +151,7 @@ public class PlayerController : MonoBehaviour
     //jumping
     private void Jump()
     {
+        CheckFloor();
         if (Input.GetButtonDown("Jump"))
         {
             if (mayJump == true)
