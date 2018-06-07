@@ -10,7 +10,8 @@ public class EnemyLOS : LOS
         Normal,
         InSight,
         OutSight,
-        Spotted
+        Spotted,
+        Nothing
     }
     [HideInInspector]
     public State curState = State.Normal;
@@ -20,26 +21,36 @@ public class EnemyLOS : LOS
     public GameObject hitBox;
     public float seeTime = 1;
     public float loseTime = 5;
+    public bool ifCloseYouDie = false;
+    public float closedeathDistance = 0.33f;
 
 
     void Update()
     {
-        Look();
+        if (curState != State.Nothing)
+        {
+            Look();
+        }
         InOutSightActivator();
         IsClose();
         IsSpotted();
         Die();
     }
 
-    void IsClose(){
-        if (Vector3.Distance(transform.position, target.position) < sightRange / 3)
+    void IsClose()
+    {
+        if (Vector3.Distance(transform.position, target.position) < closedeathDistance / 3)
         {
-            curState = State.Spotted;
+            if (ifCloseYouDie == true)
+            {
+                curState = State.Spotted;
+            }
         }
 
     }
 
-    void InOutSightActivator(){
+    void InOutSightActivator()
+    {
         if (spotted == true)
         {
             IsInSight();
@@ -60,7 +71,8 @@ public class EnemyLOS : LOS
 
     }
 
-    void Die(){
+    void Die()
+    {
         if (hitBox == null)
         {
             Destroy(transform.parent.gameObject);
@@ -78,7 +90,7 @@ public class EnemyLOS : LOS
                 break;
 
             case State.InSight:
-                timer += Time.deltaTime * seeTime;
+                timer += Time.deltaTime * seeTime / (Vector3.Distance(transform.position, target.position) / 6);
                 if (timer > 1)
                 {
                     curState = State.Spotted;
@@ -108,7 +120,9 @@ public class EnemyLOS : LOS
                 timer = Mathf.MoveTowards(timer, 0, Time.deltaTime);
                 if (timer == 0)
                 {
-                    curState = State.Normal;
+                    curState = State.Nothing;
+                    Debug.Log("Ai kes, it was nofin");
+                    StartCoroutine(NothingTime());
                 }
                 break;
             case State.Spotted:
@@ -116,5 +130,11 @@ public class EnemyLOS : LOS
                 curState = State.OutSight;
                 break;
         }
+    }
+
+    IEnumerator NothingTime()
+    {
+        yield return new WaitForSeconds(5.5f);
+        curState = State.Normal;
     }
 }

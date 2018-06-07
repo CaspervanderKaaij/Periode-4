@@ -13,10 +13,14 @@ public class NavMeshSetter : MonoBehaviour
     EnemyLOS enemylos;
     private Vector3 lastTargetPos;
     public float speed = 3.5f;
+    AudioSource audiosource;
+    public AudioClip[] clips;
     void Start()
     {
         agent = transform.GetComponent<NavMeshAgent>();
         enemylos = transform.GetComponent<EnemyLOS>();
+        audiosource = transform.GetComponent<AudioSource>();
+        audiosource.pitch = Random.Range(0.9f,1.3f);
     }
 
     void Update()
@@ -46,7 +50,9 @@ public class NavMeshSetter : MonoBehaviour
     void NormalBehaviour()
     {
         agent.speed = speed;
-        agent.SetDestination(target[curTarget].position);
+        
+            agent.SetDestination(target[curTarget].position);
+        
 
         if (Vector3.Distance(transform.position, target[curTarget].position) < 0.5f)
         {
@@ -63,19 +69,30 @@ public class NavMeshSetter : MonoBehaviour
 
     void SpotFollow()
     {
-        agent.speed = 0;
+        if (agent.speed != speed * 2)
+        {
+            PlaySound(clips[0]);
+        }
+        agent.speed = speed * 2;
         lastTargetPos = enemylos.target.position;
         agent.SetDestination(lastTargetPos);
+        transform.LookAt(new Vector3(lastTargetPos.x,transform.position.y,lastTargetPos.z));
     }
 
     void LookAround()
     {
-        agent.speed = speed / 3;
+        if(agent.speed != speed * 1.01f){
+            if(enemylos.timer / enemylos.loseTime < 0.3f ){
+                PlaySound(clips[1]);
+            }
+        }
+        agent.speed = speed * 1.01f;
         agent.SetDestination(lastTargetPos);
     }
 
-    void BackToRoute()
+    void PlaySound(AudioClip clip)
     {
-
+        audiosource.clip = clip;
+        audiosource.Play();
     }
 }
