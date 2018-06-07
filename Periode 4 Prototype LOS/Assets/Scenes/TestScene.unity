@@ -250,6 +250,7 @@ MonoBehaviour:
   weapons:
   - {fileID: 1865105329}
   - {fileID: 1591550091}
+  - {fileID: 568255935}
 --- !u!4 &7309314
 Transform:
   m_ObjectHideFlags: 0
@@ -6505,6 +6506,7 @@ Transform:
   - {fileID: 1766964913}
   - {fileID: 1865105330}
   - {fileID: 1591550092}
+  - {fileID: 568255936}
   m_Father: {fileID: 7309314}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11533,6 +11535,49 @@ MeshCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 300a4e85251a2754e8cf1db70ab244ec, type: 3}
   m_PrefabInternal: {fileID: 38866946}
+--- !u!1 &568255935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 568255936}
+  - component: {fileID: 568255937}
+  m_Layer: 0
+  m_Name: SmokebombThrower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &568255936
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568255935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 335691553}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &568255937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568255935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9edbd9358deeb54193b218584bff787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeGrenade: {fileID: 1758554552178964, guid: 8ae49ce6e20050b41a5add00ddf777a9,
+    type: 2}
+  throwingForce: 10
 --- !u!4 &570675081 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 300a4e85251a2754e8cf1db70ab244ec, type: 3}
