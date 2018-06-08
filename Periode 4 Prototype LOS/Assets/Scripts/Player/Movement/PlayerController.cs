@@ -125,8 +125,8 @@ public class PlayerController : MonoBehaviour
         }
      */
 
-    //Casper variant
 
+    //Casper variant
     void CheckFloor()
     {
         RaycastHit hit;
@@ -146,6 +146,16 @@ public class PlayerController : MonoBehaviour
         v.x = Input.GetAxis("Horizontal");
         v.z = Input.GetAxis("Vertical");
         transform.Translate(v * speed * Time.deltaTime);
+
+
+        //Casper again. Zorgt voor het op neer effect tijdens lopen
+        if (Vector2.SqrMagnitude(new Vector2(v.x, v.z)) > 0)
+        {
+            if (mayJump == true)
+            {
+                transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + Mathf.PingPong(Time.time / 1.4f, 0.1f), 0);
+            }
+        }
     }
 
     //jumping
@@ -161,6 +171,20 @@ public class PlayerController : MonoBehaviour
                 if (jumpCurrent >= jumpMax)
                 {
                     mayJump = false;
+                }
+            }
+        }
+        //Fastfall door Casper
+        if (mayJump == false)
+        {
+            if (body.velocity.y > 0)
+            {
+                if (Input.GetAxis("Jump") == 0)
+                {
+                    if (hookShotJumping == false)
+                    {
+                        body.velocity = new Vector3(velocity.x, Mathf.Lerp(body.velocity.y, 0, Time.deltaTime * 10), velocity.z);
+                    }
                 }
             }
         }

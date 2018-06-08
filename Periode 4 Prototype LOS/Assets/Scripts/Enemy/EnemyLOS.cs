@@ -121,7 +121,6 @@ public class EnemyLOS : LOS
                 if (timer == 0)
                 {
                     curState = State.Nothing;
-                    Debug.Log("Ai kes, it was nofin");
                     StartCoroutine(NothingTime());
                 }
                 break;
