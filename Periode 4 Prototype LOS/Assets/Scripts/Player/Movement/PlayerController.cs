@@ -141,11 +141,19 @@ public class PlayerController : MonoBehaviour
     }
 
     //movement back-front & left-right
+    float curAcc = 0.3f;//door Casper :D
     private void Move()
     {
         v.x = Input.GetAxis("Horizontal");
         v.z = Input.GetAxis("Vertical");
-        transform.Translate(v * speed * Time.deltaTime);
+
+        if(Vector2.SqrMagnitude(new Vector2(v.x, v.z)) > 0){
+            curAcc = Mathf.Lerp(curAcc,1,Time.deltaTime * 3);
+        } else {
+            curAcc = 0.3f;
+        }
+
+        transform.Translate(v * curAcc * speed * Time.deltaTime);
 
 
         //Casper again. Zorgt voor het op neer effect tijdens lopen
@@ -153,7 +161,7 @@ public class PlayerController : MonoBehaviour
         {
             if (mayJump == true)
             {
-                transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + Mathf.PingPong(Time.time / 1.4f, 0.1f), 0);
+                transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + (Mathf.PingPong(Time.time / 1.4f, 0.1f) * curAcc), 0);
             }
         }
     }
@@ -186,6 +194,10 @@ public class PlayerController : MonoBehaviour
                         body.velocity = new Vector3(velocity.x, Mathf.Lerp(body.velocity.y, 0, Time.deltaTime * 10), velocity.z);
                     }
                 }
+            }
+            else if (hookShotJumping == false)
+            {
+                body.velocity = new Vector3(velocity.x, Mathf.Lerp(body.velocity.y, -9.81f, Time.deltaTime * 3), velocity.z);
             }
         }
     }

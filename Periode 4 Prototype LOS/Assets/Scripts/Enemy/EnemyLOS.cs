@@ -29,7 +29,12 @@ public class EnemyLOS : LOS
     {
         if (curState != State.Nothing)
         {
-            Look();
+            if (Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, target.position.y, 0)) < 5)
+            {
+                Look();
+            } else {
+                spotted = false;
+            }
         }
         InOutSightActivator();
         IsClose();
