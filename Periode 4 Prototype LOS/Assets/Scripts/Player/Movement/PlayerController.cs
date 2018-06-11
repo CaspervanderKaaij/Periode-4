@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public State curState = State.Normal;
     [HideInInspector]
     public bool hookShotJumping = false;
+    public float headBob = 1;
 
     void Start()
     {
@@ -161,7 +162,7 @@ public class PlayerController : MonoBehaviour
         {
             if (mayJump == true)
             {
-                transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + (Mathf.PingPong(Time.time / 1.4f, 0.1f) * curAcc), 0);
+                transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + (Mathf.PingPong(Time.time / 1.4f, 0.1f) * curAcc * headBob), 0);
             }
         }
     }
