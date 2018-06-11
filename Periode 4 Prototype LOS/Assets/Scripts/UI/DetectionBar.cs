@@ -85,10 +85,16 @@ public class DetectionBar : MonoBehaviour
         {
 
             enemySeers[i] = enemies[i].detectionBarBool;
-
-            if (enemySeers[i] == true)
+            if (enemies[i] != null)
             {
-                seers++;
+                if (enemySeers[i] == true)
+                {
+                    seers++;
+                }
+            }
+            else
+            {
+                enemySeers[i] = false;
             }
         }
 
@@ -125,7 +131,7 @@ public class DetectionBar : MonoBehaviour
 
     public void OffDetect()
     {
-        detectionLevel -= Time.deltaTime * 5;
+        //detectionLevel -= Time.deltaTime * 5;
         if (detectionLevel < 0)
         {
             detectionLevel = 0;

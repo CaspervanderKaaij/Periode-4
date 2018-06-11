@@ -15,7 +15,7 @@ public class NavMeshSetter : MonoBehaviour
 
     public PathFindStrat pathFindStrat = PathFindStrat.AToB;
 
-     public enum TalkMode
+    public enum TalkMode
     {
         InSelf,
         Silent,
@@ -65,7 +65,7 @@ public class NavMeshSetter : MonoBehaviour
             case EnemyLOS.State.OutSight:
                 LookAround();
                 break;
-                case EnemyLOS.State.Spotted:
+            case EnemyLOS.State.Spotted:
                 SeeBehaviour();
                 break;
         }
@@ -74,12 +74,7 @@ public class NavMeshSetter : MonoBehaviour
     void NormalBehaviour()
     {
 
-        talkTimer += Time.deltaTime;
-        if (talkTimer > 3)
-        {
-            talkTimer = 0;
-            PlaySound(clips[Random.Range(2, 5)]);
-        }
+        TalkStuff();
 
         if (enemylos.spotted == false)
         {
@@ -110,7 +105,7 @@ public class NavMeshSetter : MonoBehaviour
                 }
                 else
                 {
-                    curTarget = Random.Range(0,target.Length);
+                    curTarget = Random.Range(0, target.Length);
                 }
             }
         }
@@ -120,8 +115,39 @@ public class NavMeshSetter : MonoBehaviour
         }
     }
 
-    void SeeBehaviour(){
-        agent.speed = 0;
+    void TalkStuff()
+    {
+        switch (talkMode)
+        {
+
+            case TalkMode.InSelf:
+                talkTimer += Time.deltaTime;
+                if (talkTimer > 3)
+                {
+                    talkTimer = 0;
+                    PlaySound(clips[Random.Range(2, 5)]);
+                }
+                break;
+            case TalkMode.Conversation:
+                talkTimer += Time.deltaTime;
+                if (talkTimer > 3)
+                {
+                    talkTimer = 0;
+                    PlaySound(clips[2]);
+                }
+                break;
+        }
+    }
+
+    void SeeBehaviour()
+    {
+         agent.speed = 0;
+        // agent.SetDestination(target[0].position);
+       // Debug.Log("poop");
+       // agent.enabled = false;
+        Vector3 playerPos = enemylos.target.position;
+        transform.LookAt(new Vector3(playerPos.x, transform.position.y, playerPos.z));
+       // transform.eulerAngles += new Vector3(0, 180, 0);
     }
 
     void SpotFollow()
