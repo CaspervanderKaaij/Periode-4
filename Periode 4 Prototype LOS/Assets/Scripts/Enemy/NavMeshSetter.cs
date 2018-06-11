@@ -15,6 +15,15 @@ public class NavMeshSetter : MonoBehaviour
 
     public PathFindStrat pathFindStrat = PathFindStrat.AToB;
 
+     public enum TalkMode
+    {
+        InSelf,
+        Silent,
+        Conversation
+    }
+
+    public TalkMode talkMode = TalkMode.InSelf;
+
     public Transform[] target;
     private int curTarget = 0;
     private NavMeshAgent agent;
@@ -55,6 +64,9 @@ public class NavMeshSetter : MonoBehaviour
                 break;
             case EnemyLOS.State.OutSight:
                 LookAround();
+                break;
+                case EnemyLOS.State.Spotted:
+                SeeBehaviour();
                 break;
         }
     }
@@ -106,6 +118,10 @@ public class NavMeshSetter : MonoBehaviour
         {
             agent.SetDestination(target[0].position);
         }
+    }
+
+    void SeeBehaviour(){
+        agent.speed = 0;
     }
 
     void SpotFollow()

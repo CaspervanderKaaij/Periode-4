@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
@@ -117,5 +118,9 @@ public class Manager : MonoBehaviour
         curObjective = Objective.Complete;
         paused = true;
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void Dead(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

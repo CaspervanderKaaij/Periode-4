@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class EnemyLOS : LOS
 {
@@ -23,6 +23,8 @@ public class EnemyLOS : LOS
     public float loseTime = 5;
     public bool ifCloseYouDie = false;
     public float closedeathDistance = 0.33f;
+    [HideInInspector]
+    public bool detectionBarBool = false;
 
 
     void Update()
@@ -32,7 +34,9 @@ public class EnemyLOS : LOS
             if (Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, target.position.y, 0)) < 5)
             {
                 Look();
-            } else {
+            }
+            else
+            {
                 spotted = false;
             }
         }
@@ -71,7 +75,13 @@ public class EnemyLOS : LOS
     {
         if (curState == State.Spotted)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            detectionBarBool = true;
+            
+        }
+        else
+        {
+            detectionBarBool = false;
         }
 
     }
