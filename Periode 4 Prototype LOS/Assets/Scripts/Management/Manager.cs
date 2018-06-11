@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-
     public enum Objective
     {
         Collect,
         GoHome,
         Complete
     }
+
     private bool start = true;
     public GameObject startText;
     public Objective curObjective = Objective.Collect;

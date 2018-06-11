@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bfae06fbe45b14ea52649dc3fa72e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToExplode: 3
+  timeToExplode: 1
   timeToDestroySmoke: 10
   timeToDestroyBomb: 15
   smokeRadius: 50
