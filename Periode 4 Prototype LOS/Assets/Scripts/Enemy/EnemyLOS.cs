@@ -105,8 +105,8 @@ public class EnemyLOS : LOS
                 break;
 
             case State.InSight:
-                timer += Time.deltaTime * seeTime / (Vector3.Distance(transform.position, target.position) / 6);
-                if (timer > 1)
+                timer += Time.deltaTime / (Vector3.Distance(transform.position, target.position) / 6);
+                if (timer > seeTime)
                 {
                     curState = State.Spotted;
                     timer = 0;
@@ -140,7 +140,7 @@ public class EnemyLOS : LOS
                 }
                 break;
             case State.Spotted:
-                timer = 5;
+                timer = loseTime;
                 curState = State.OutSight;
                 break;
         }
