@@ -1369,6 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathFindStrat: 1
+  talkMode: 0
   target:
   - {fileID: 4215157758925032}
   - {fileID: 4306497810666260}
@@ -1401,10 +1402,11 @@ MonoBehaviour:
   curState: 0
   timer: 0
   hitBox: {fileID: 1640363851786338}
-  seeTime: 1
-  loseTime: 5
+  seeTime: 0.37
+  loseTime: 1.3
   ifCloseYouDie: 0
   closedeathDistance: 0.33
+  detectionBarBool: 0
 --- !u!114 &114255240681263774
 MonoBehaviour:
   m_ObjectHideFlags: 1

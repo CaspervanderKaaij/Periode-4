@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,24 +22,40 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool hookShotJumping = false;
     public float headBob = 1;
+    public Image[] uiCrosser;
+    public bool crosserHit = true;
 
     void Start()
     {
         body = GetComponent<Rigidbody>();
     }
 
+    void SetCrosser()
+    {
+        if (crosserHit == true)
+        {
+            for (int i = 0; i < uiCrosser.Length; i++)
+            {
+                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color ,Color.red,Time.deltaTime * 30);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < uiCrosser.Length; i++)
+            {
+                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color ,Color.black,Time.deltaTime * 30);
+            }
+        }
+    }
 
     private Vector3 hookShotGoal = Vector3.zero;
     private float hookShotSpeed = 1;
 
     public void HookShotStart(Vector3 goal, float speed)
     {
-        if (goal.y > transform.position.y)
-        {
-            curState = State.HookShot;
-            hookShotGoal = goal + new Vector3(0, 1, 0);
-            hookShotSpeed = speed;
-        }
+        curState = State.HookShot;
+        hookShotGoal = goal + new Vector3(0, 1, 0);
+        hookShotSpeed = speed;
     }
 
     void HookShoting()
@@ -148,9 +165,12 @@ public class PlayerController : MonoBehaviour
         v.x = Input.GetAxis("Horizontal");
         v.z = Input.GetAxis("Vertical");
 
-        if(Vector2.SqrMagnitude(new Vector2(v.x, v.z)) > 0){
-            curAcc = Mathf.Lerp(curAcc,1,Time.deltaTime * 3);
-        } else {
+        if (Vector2.SqrMagnitude(new Vector2(v.x, v.z)) > 0)
+        {
+            curAcc = Mathf.Lerp(curAcc, 1, Time.deltaTime * 3);
+        }
+        else
+        {
             curAcc = 0.3f;
         }
 
@@ -226,7 +246,7 @@ public class PlayerController : MonoBehaviour
     //CODE UPDATE STAAT HIER
     void Update()
     {
-
+        SetCrosser();
         if (hookShotJumping == true)
         {
             if (mayJump == true)

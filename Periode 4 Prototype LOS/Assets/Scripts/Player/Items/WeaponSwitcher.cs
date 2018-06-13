@@ -6,7 +6,8 @@ public class WeaponSwitcher : MonoBehaviour {
 
 PlayerController plyr;
 public GameObject[] weapons;
-private int curWeapon = 0;
+[HideInInspector]
+public int curWeapon = 0;
 
 	void Start () {
 		plyr = transform.GetComponent<PlayerController>();
@@ -15,9 +16,8 @@ private int curWeapon = 0;
 	void Update () {
 		if(plyr.curState == PlayerController.State.Normal){
 			if(Input.GetAxis("Mouse ScrollWheel") != 0){
-
-				//Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
 				curWeapon += Mathf.RoundToInt(10 * Input.GetAxis("Mouse ScrollWheel"));
+				plyr.crosserHit = false;
 			}
 		}
 

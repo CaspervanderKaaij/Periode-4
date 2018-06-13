@@ -7,7 +7,7 @@ public class HookShot : MonoBehaviour
 
     private PlayerController plyr;
     public float speed = 100;
-
+    public float range = 100;
     public Transform UITarget;
     void Start()
     {
@@ -17,6 +17,7 @@ public class HookShot : MonoBehaviour
     void Update()
     {
         //Debug.DrawRay(transform.parent.position,transform.parent.forward,Color.red,0.001f);
+        plyr.crosserHit = false;
         if (Input.GetButtonDown("Fire1"))
         {
             RayStuff();
@@ -27,6 +28,22 @@ public class HookShot : MonoBehaviour
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
             {
                 UITarget.position = hit.point;
+                if (Vector3.Distance(plyr.transform.position, hit.point) < range)
+                {
+                    if (Vector3.Distance(transform.position, hit.point) > 2)
+                    {
+                        if (plyr.curState != PlayerController.State.HookShot)
+                        {
+                            if (plyr.hookShotJumping == false)
+                            {
+                                if (hit.point.y > transform.position.y)
+                                {
+                                    plyr.crosserHit = true;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -34,17 +51,22 @@ public class HookShot : MonoBehaviour
     void RayStuff()
     {
         RaycastHit hit;
-        //Camera.main.ScreenPointToRay(Vector3.zero);
-        //if(Physics.Raycast(transform.parent.position,transform.parent.forward,out hit,100)){
-        //if(Physics.Raycast(Camera.main.ScreenPointToRay(Vector3.forward),out hit,100)){
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
         {
-            if (plyr.curState != PlayerController.State.HookShot)
+            if (Vector3.Distance(plyr.transform.position, hit.point) < range)
             {
-                // transform.parent.parent.position = hit.point + new Vector3(0, 1.33f, 0);
-                if (plyr.hookShotJumping == false)
+                if (Vector3.Distance(transform.position, hit.point) > 2)
                 {
-                    plyr.HookShotStart(hit.point, speed);
+                    if (plyr.curState != PlayerController.State.HookShot)
+                    {
+                        if (plyr.hookShotJumping == false)
+                        {
+                            if (hit.point.y > transform.position.y)
+                            {
+                                plyr.HookShotStart(hit.point, speed);
+                            }
+                        }
+                    }
                 }
             }
         }
