@@ -28,28 +28,18 @@ public class HookShot : MonoBehaviour
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
             {
                 UITarget.position = hit.point;
-                if (Vector3.Distance(plyr.transform.position, hit.point) < range)
+                if (CheckState() == true)
                 {
-                    if (Vector3.Distance(transform.position, hit.point) > 2)
-                    {
-                        if (plyr.curState != PlayerController.State.HookShot)
-                        {
-                            if (plyr.hookShotJumping == false)
-                            {
-                                if (hit.point.y > transform.position.y)
-                                {
-                                    plyr.crosserHit = true;
-                                }
-                            }
-                        }
-                    }
+                    plyr.crosserHit = true;
                 }
+
             }
         }
     }
 
-    void RayStuff()
+    bool CheckState()
     {
+        bool toReturn = false;
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
         {
@@ -57,18 +47,32 @@ public class HookShot : MonoBehaviour
             {
                 if (Vector3.Distance(transform.position, hit.point) > 2)
                 {
-                    if (plyr.curState != PlayerController.State.HookShot)
+                    if (plyr.curState == PlayerController.State.Normal)
                     {
                         if (plyr.hookShotJumping == false)
                         {
                             if (hit.point.y > transform.position.y)
                             {
-                                plyr.HookShotStart(hit.point, speed);
+                                toReturn = true;
                             }
                         }
                     }
                 }
             }
+        }
+        return toReturn;
+    }
+
+    void RayStuff()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
+        {
+            if (CheckState() == true)
+            {
+                plyr.HookShotStart(hit.point, speed);
+            }
+
         }
     }
 }

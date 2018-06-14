@@ -142,6 +142,7 @@ public class TutorialManager : MonoBehaviour
             case Tutorial.Star:
                 if (wpn.curWeapon == 1)
                 {
+                    tutBuffer = Tutorial.SmokeBomb;
                     if (Input.GetButtonDown("Fire1"))
                     {
                         Complete();

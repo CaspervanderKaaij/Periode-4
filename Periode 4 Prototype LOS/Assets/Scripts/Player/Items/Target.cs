@@ -28,7 +28,7 @@ public class Target : MonoBehaviour
             if (hit.collider == hitCollider.collider)
             {
                 damage *= hitCollider.multiplier;
-                print("You hit the collider " + hitCollider.name + " and it multiplied the damage by " + hitCollider.multiplier.ToString());
+//                print("You hit the collider " + hitCollider.name + " and it multiplied the damage by " + hitCollider.multiplier.ToString());
                 break;
             }
         }

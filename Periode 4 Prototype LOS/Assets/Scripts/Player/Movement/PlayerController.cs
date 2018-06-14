@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     {
         Normal,
         HookShot,
-        HookShotEnd
+        HookShotEnd,
+        Cutscene
     }
     //CODE VAN CASPER
     [Header("Door Casper")]
@@ -28,22 +29,24 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        curState = State.Normal;
     }
 
     void SetCrosser()
     {
+
         if (crosserHit == true)
         {
             for (int i = 0; i < uiCrosser.Length; i++)
             {
-                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color ,Color.red,Time.deltaTime * 30);
+                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color, Color.red, Time.deltaTime * 30);
             }
         }
         else
         {
             for (int i = 0; i < uiCrosser.Length; i++)
             {
-                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color ,Color.black,Time.deltaTime * 30);
+                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color, Color.black, Time.deltaTime * 30);
             }
         }
     }
@@ -82,7 +85,7 @@ public class PlayerController : MonoBehaviour
 
     void HookShotJump()
     {
-        body.velocity = velocity * hookShotJumpStrength;
+        body.velocity = velocity * hookShotJumpStrength + transform.TransformDirection(0,0,-3);
         hookShotJumping = true;
         speed /= 2;
         FindObjectOfType<Manager>().TimeStop(0.1f, 0f);
@@ -183,6 +186,8 @@ public class PlayerController : MonoBehaviour
             if (mayJump == true)
             {
                 transform.GetChild(0).transform.localPosition = new Vector3(0, 0.381f + (Mathf.PingPong(Time.time / 1.4f, 0.1f) * curAcc * headBob), 0);
+            } else {
+                body.velocity = new Vector3(velocity.x,body.velocity.y,velocity.z);
             }
         }
     }

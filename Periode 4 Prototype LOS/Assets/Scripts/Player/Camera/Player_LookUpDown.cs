@@ -5,17 +5,19 @@ using UnityEngine;
 public class Player_LookUpDown : MonoBehaviour {
     private Vector3 r;
     [SerializeField] private float rotSpeed;
+    //plyr stuff door Casper
+    PlayerController plyr;
 
-    // Use this for initialization
     void Start()
     {
-
+        plyr = FindObjectOfType<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if(plyr.curState != PlayerController.State.Cutscene){
         Look();
+        }
     }
 
     private void Look()
