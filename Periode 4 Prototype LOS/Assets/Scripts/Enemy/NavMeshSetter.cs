@@ -21,6 +21,15 @@ public class NavMeshSetter : MonoBehaviour
         Silent,
         Conversation
     }
+    public enum Animate
+    {
+        Idle,
+        Walk,
+        Death,
+        Cough,
+        Confused
+    }
+    public Animate curAnim = Animate.Idle;
 
     public TalkMode talkMode = TalkMode.InSelf;
 
@@ -46,6 +55,7 @@ public class NavMeshSetter : MonoBehaviour
 
     void Update()
     {
+        SetAnim();
         switch (enemylos.curState)
         {
 
@@ -141,13 +151,13 @@ public class NavMeshSetter : MonoBehaviour
 
     void SeeBehaviour()
     {
-         agent.speed = 0;
+        agent.speed = 0;
         // agent.SetDestination(target[0].position);
-       // Debug.Log("poop");
-       // agent.enabled = false;
+        // Debug.Log("poop");
+        // agent.enabled = false;
         Vector3 playerPos = enemylos.target.position;
         transform.LookAt(new Vector3(playerPos.x, transform.position.y, playerPos.z));
-       // transform.eulerAngles += new Vector3(0, 180, 0);
+        // transform.eulerAngles += new Vector3(0, 180, 0);
     }
 
     void SpotFollow()
@@ -192,5 +202,62 @@ public class NavMeshSetter : MonoBehaviour
         audiosource.Stop();
         audiosource.clip = clip;
         audiosource.Play();
+    }
+
+    void SetAnim()
+    {
+        switch (enemylos.curState)
+        {
+            case EnemyLOS.State.Normal:
+                if (agent.isStopped == true)
+                {
+                    curAnim = Animate.Idle;
+                }
+                else
+                {
+                    curAnim = Animate.Walk;
+                }
+                break;
+            case EnemyLOS.State.Nothing:
+                if (curAnim != Animate.Cough)
+                {
+                    curAnim = Animate.Confused;
+                }
+                break;
+            case EnemyLOS.State.Spotted:
+                curAnim = Animate.Idle;
+                break;
+            case EnemyLOS.State.InSight:
+                if (agent.isStopped == true)
+                {
+                    curAnim = Animate.Idle;
+                }
+                else
+                {
+                    curAnim = Animate.Walk;
+                }
+                break;
+            case EnemyLOS.State.OutSight:
+                if (agent.isStopped == true)
+                {
+                    curAnim = Animate.Idle;
+                }
+                else
+                {
+                    curAnim = Animate.Walk;
+                }
+                break;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Smoke")
+        {
+            enemylos.curState = EnemyLOS.State.Nothing;
+            StartCoroutine(enemylos.NothingTime());
+            curAnim = Animate.Cough;
+            other.tag = "Untagged";
+        }
     }
 }

@@ -383,6 +383,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -441,6 +445,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -494,6 +502,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -680,6 +692,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -737,6 +753,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -878,6 +898,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -1017,6 +1041,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -1144,6 +1172,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -1298,6 +1330,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -1757,6 +1793,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -1952,6 +1992,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -2586,6 +2630,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -2783,6 +2831,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -2964,6 +3016,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
   m_IsPrefabParent: 0
@@ -3017,6 +3073,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
@@ -3145,6 +3205,10 @@ Prefab:
     - target: {fileID: 400000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 780faa647220cad4897a9519d86cea82, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780faa647220cad4897a9519d86cea82, type: 3}

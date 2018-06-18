@@ -146,7 +146,7 @@ public class EnemyLOS : LOS
         }
     }
 
-    IEnumerator NothingTime()
+    public IEnumerator NothingTime()
     {
         yield return new WaitForSeconds(5.5f);
         curState = State.Normal;

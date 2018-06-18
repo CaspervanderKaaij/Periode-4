@@ -20,6 +20,7 @@ public class Manager : MonoBehaviour
     public bool paused = false;
     [HideInInspector]
     public float timeScale = 1;
+    public int nextLevel = 0;
 
     void Start()
     {
@@ -118,6 +119,7 @@ public class Manager : MonoBehaviour
         curObjective = Objective.Complete;
         paused = true;
         Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(nextLevel);
     }
 
     public void Dead(){
