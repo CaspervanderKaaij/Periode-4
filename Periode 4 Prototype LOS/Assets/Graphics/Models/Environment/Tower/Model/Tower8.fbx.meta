@@ -1,0 +1,1160 @@
+fileFormatVersion: 2
+guid: b20df95dbd008ec4d92f787d1f96089d
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ceiling2 (U).001
+    100002: Ceiling2 (U).002
+    100004: Ceiling2 (U).003
+    100006: Ceiling2 (U).004
+    100008: Ceiling2 (U).005
+    100010: Ceiling2 (U).006
+    100012: Ceiling2 (U).007
+    100014: Ceiling2 (U).008
+    100016: Ceiling2 (U).009
+    100018: Ceiling2 (U).010
+    100020: Ceiling2 (U).011
+    100022: Ceiling2 (U).012
+    100024: Ceiling2 (U).013
+    100026: Ceiling2 (U).014
+    100028: Ceiling2 (U).015
+    100030: Ceiling2 (U).016
+    100032: Ceiling2 (U).017
+    100034: Ceiling2 (U).018
+    100036: Ceiling2 (U).019
+    100038: Ceiling2 (U).020
+    100040: Ceiling3 (U).001
+    100042: Ceiling3 (U).002
+    100044: Ceiling3 (U).003
+    100046: Ceiling3 (U).004
+    100048: Ceiling3 (U).005
+    100050: Ceiling3 (U).006
+    100052: Ceiling3 (U).007
+    100054: Ceiling3 (U).008
+    100056: Ceiling3 (U).009
+    100058: Ceiling3 (U).010
+    100060: Ceiling3 (U).011
+    100062: Ceiling3 (U).012
+    100064: Ceiling3 (U).013
+    100066: Ceiling3 (U).014
+    100068: Ceiling3 (U).015
+    100070: Ceiling3 (U).016
+    100072: Ceiling3 (U).017
+    100074: Ceiling3 (U).018
+    100076: Ceiling3 (U).019
+    100078: Ceiling3 (U).020
+    100080: Mast (U)
+    100082: Pilar (U).003
+    100084: Pilar (U).004
+    100086: Pilar (U).005
+    100088: Pilar (U).006
+    100090: Roof
+    100092: //RootNode
+    100094: Wall1.001
+    100096: Wall1.002
+    100098: Wall1.003
+    100100: Wall1.004
+    100102: Wall1.005
+    100104: Wall1.006
+    100106: Wall1.007
+    100108: Wall1.008
+    100110: Wall1.009
+    100112: Wall1.010
+    100114: Wall1.011
+    100116: Wall1.012
+    100118: Wall1.013
+    100120: Wall1.014
+    100122: Wall1.015
+    100124: Wall1.016
+    100126: Wall1.017
+    100128: Wall1.018
+    100130: Wall1.019
+    100132: Wall1.020
+    100134: Wall1.021
+    100136: Wall1.022
+    100138: Wall1.023
+    100140: Wall1.024
+    100142: Wall1.025
+    100144: Wall1.026
+    100146: Wall1.027
+    100148: Wall1.028
+    100150: Wall1.029
+    100152: Wall1.030
+    100154: Wall1.031
+    100156: Wall1.032
+    100158: Wall1.033
+    100160: Wall1.034
+    100162: Wall1.035
+    100164: Wall1.036
+    100166: Wall1.037
+    100168: Wall1.038
+    100170: Wall1.039
+    100172: Wall1.040
+    100174: Wall1.041
+    100176: Wall1.042
+    100178: Wall1.043
+    100180: Wall1.044
+    100182: Wall1.045
+    100184: Wall1.046
+    100186: Wall1.047
+    100188: Wall1.048
+    100190: Wall2(U).001
+    100192: Wall2(U).002
+    100194: Wall2(U).003
+    100196: Wall2(U).004
+    100198: WFrame1(U).001
+    100200: WFrame1(U).002
+    100202: WFrame1(U).003
+    100204: WFrame1(U).004
+    100206: WFrame1(U).005
+    100208: WFrame1(U).006
+    100210: WFrame1(U).007
+    100212: WFrame1(U).008
+    100214: WFrame1(U).009
+    100216: WFrame1(U).010
+    100218: WFrame1(U).011
+    100220: WFrame1(U).012
+    100222: WFrame1(U).013
+    100224: WFrame1(U).014
+    100226: WFrame1(U).015
+    100228: WFrame1(U).016
+    100230: WFrame1(U).017
+    100232: WFrame1(U).018
+    100234: WFrame1(U).019
+    100236: WFrame1(U).020
+    100238: WFrame1(U).021
+    100240: WFrame1(U).022
+    100242: WFrame1(U).023
+    100244: WFrame1(U).024
+    100246: WFrame1(U).025
+    100248: WFrame1(U).026
+    100250: WFrame1(U).027
+    100252: WFrame1(U).028
+    100254: WFrame1(U).029
+    100256: WFrame1(U).030
+    100258: WFrame1(U).031
+    100260: WFrame1(U).032
+    100262: WFrame1(U).033
+    100264: WFrame1(U).034
+    100266: WFrame1(U).035
+    100268: WFrame1(U).036
+    100270: WFrame1(U).037
+    100272: WFrame1(U).038
+    100274: WFrame1(U).039
+    100276: WFrame1(U).040
+    100278: Window1(U).001
+    100280: Window1(U).002
+    100282: Window1(U).003
+    100284: Window1(U).004
+    100286: Window1(U).005
+    100288: Window1(U).006
+    100290: Window1(U).007
+    100292: Window1(U).008
+    100294: Window1(U).009
+    100296: Window1(U).010
+    100298: Window1(U).011
+    100300: Window1(U).012
+    100302: Window1(U).013
+    100304: Window1(U).014
+    100306: Window1(U).015
+    100308: Window1(U).016
+    100310: Window1(U).017
+    100312: Window1(U).018
+    100314: Window1(U).019
+    100316: Window1(U).020
+    100318: Window1(U).021
+    100320: Window1(U).022
+    100322: Window1(U).023
+    100324: Window1(U).024
+    100326: Window1(U).025
+    100328: Window1(U).026
+    100330: Window1(U).027
+    100332: Window1(U).028
+    100334: Window1(U).029
+    100336: Window1(U).030
+    100338: Window1(U).031
+    100340: Window1(U).032
+    100342: Window1(U).033
+    100344: Window1(U).034
+    100346: Window1(U).035
+    100348: Window1(U).036
+    100350: Window1(U).037
+    100352: Window1(U).038
+    100354: Window1(U).039
+    100356: Window1(U).040
+    400000: Ceiling2 (U).001
+    400002: Ceiling2 (U).002
+    400004: Ceiling2 (U).003
+    400006: Ceiling2 (U).004
+    400008: Ceiling2 (U).005
+    400010: Ceiling2 (U).006
+    400012: Ceiling2 (U).007
+    400014: Ceiling2 (U).008
+    400016: Ceiling2 (U).009
+    400018: Ceiling2 (U).010
+    400020: Ceiling2 (U).011
+    400022: Ceiling2 (U).012
+    400024: Ceiling2 (U).013
+    400026: Ceiling2 (U).014
+    400028: Ceiling2 (U).015
+    400030: Ceiling2 (U).016
+    400032: Ceiling2 (U).017
+    400034: Ceiling2 (U).018
+    400036: Ceiling2 (U).019
+    400038: Ceiling2 (U).020
+    400040: Ceiling3 (U).001
+    400042: Ceiling3 (U).002
+    400044: Ceiling3 (U).003
+    400046: Ceiling3 (U).004
+    400048: Ceiling3 (U).005
+    400050: Ceiling3 (U).006
+    400052: Ceiling3 (U).007
+    400054: Ceiling3 (U).008
+    400056: Ceiling3 (U).009
+    400058: Ceiling3 (U).010
+    400060: Ceiling3 (U).011
+    400062: Ceiling3 (U).012
+    400064: Ceiling3 (U).013
+    400066: Ceiling3 (U).014
+    400068: Ceiling3 (U).015
+    400070: Ceiling3 (U).016
+    400072: Ceiling3 (U).017
+    400074: Ceiling3 (U).018
+    400076: Ceiling3 (U).019
+    400078: Ceiling3 (U).020
+    400080: Mast (U)
+    400082: Pilar (U).003
+    400084: Pilar (U).004
+    400086: Pilar (U).005
+    400088: Pilar (U).006
+    400090: Roof
+    400092: //RootNode
+    400094: Wall1.001
+    400096: Wall1.002
+    400098: Wall1.003
+    400100: Wall1.004
+    400102: Wall1.005
+    400104: Wall1.006
+    400106: Wall1.007
+    400108: Wall1.008
+    400110: Wall1.009
+    400112: Wall1.010
+    400114: Wall1.011
+    400116: Wall1.012
+    400118: Wall1.013
+    400120: Wall1.014
+    400122: Wall1.015
+    400124: Wall1.016
+    400126: Wall1.017
+    400128: Wall1.018
+    400130: Wall1.019
+    400132: Wall1.020
+    400134: Wall1.021
+    400136: Wall1.022
+    400138: Wall1.023
+    400140: Wall1.024
+    400142: Wall1.025
+    400144: Wall1.026
+    400146: Wall1.027
+    400148: Wall1.028
+    400150: Wall1.029
+    400152: Wall1.030
+    400154: Wall1.031
+    400156: Wall1.032
+    400158: Wall1.033
+    400160: Wall1.034
+    400162: Wall1.035
+    400164: Wall1.036
+    400166: Wall1.037
+    400168: Wall1.038
+    400170: Wall1.039
+    400172: Wall1.040
+    400174: Wall1.041
+    400176: Wall1.042
+    400178: Wall1.043
+    400180: Wall1.044
+    400182: Wall1.045
+    400184: Wall1.046
+    400186: Wall1.047
+    400188: Wall1.048
+    400190: Wall2(U).001
+    400192: Wall2(U).002
+    400194: Wall2(U).003
+    400196: Wall2(U).004
+    400198: WFrame1(U).001
+    400200: WFrame1(U).002
+    400202: WFrame1(U).003
+    400204: WFrame1(U).004
+    400206: WFrame1(U).005
+    400208: WFrame1(U).006
+    400210: WFrame1(U).007
+    400212: WFrame1(U).008
+    400214: WFrame1(U).009
+    400216: WFrame1(U).010
+    400218: WFrame1(U).011
+    400220: WFrame1(U).012
+    400222: WFrame1(U).013
+    400224: WFrame1(U).014
+    400226: WFrame1(U).015
+    400228: WFrame1(U).016
+    400230: WFrame1(U).017
+    400232: WFrame1(U).018
+    400234: WFrame1(U).019
+    400236: WFrame1(U).020
+    400238: WFrame1(U).021
+    400240: WFrame1(U).022
+    400242: WFrame1(U).023
+    400244: WFrame1(U).024
+    400246: WFrame1(U).025
+    400248: WFrame1(U).026
+    400250: WFrame1(U).027
+    400252: WFrame1(U).028
+    400254: WFrame1(U).029
+    400256: WFrame1(U).030
+    400258: WFrame1(U).031
+    400260: WFrame1(U).032
+    400262: WFrame1(U).033
+    400264: WFrame1(U).034
+    400266: WFrame1(U).035
+    400268: WFrame1(U).036
+    400270: WFrame1(U).037
+    400272: WFrame1(U).038
+    400274: WFrame1(U).039
+    400276: WFrame1(U).040
+    400278: Window1(U).001
+    400280: Window1(U).002
+    400282: Window1(U).003
+    400284: Window1(U).004
+    400286: Window1(U).005
+    400288: Window1(U).006
+    400290: Window1(U).007
+    400292: Window1(U).008
+    400294: Window1(U).009
+    400296: Window1(U).010
+    400298: Window1(U).011
+    400300: Window1(U).012
+    400302: Window1(U).013
+    400304: Window1(U).014
+    400306: Window1(U).015
+    400308: Window1(U).016
+    400310: Window1(U).017
+    400312: Window1(U).018
+    400314: Window1(U).019
+    400316: Window1(U).020
+    400318: Window1(U).021
+    400320: Window1(U).022
+    400322: Window1(U).023
+    400324: Window1(U).024
+    400326: Window1(U).025
+    400328: Window1(U).026
+    400330: Window1(U).027
+    400332: Window1(U).028
+    400334: Window1(U).029
+    400336: Window1(U).030
+    400338: Window1(U).031
+    400340: Window1(U).032
+    400342: Window1(U).033
+    400344: Window1(U).034
+    400346: Window1(U).035
+    400348: Window1(U).036
+    400350: Window1(U).037
+    400352: Window1(U).038
+    400354: Window1(U).039
+    400356: Window1(U).040
+    2100000: Material.223
+    2100002: Material.008
+    2100004: Material.084
+    2100006: Material.083
+    2100008: Material.086
+    2100010: Material.088
+    2100012: Material.087
+    2100014: Material.089
+    2100016: Material.091
+    2100018: Material.090
+    2100020: Material.092
+    2100022: Material.094
+    2100024: Material.093
+    2100026: Material.095
+    2100028: Material.100
+    2100030: Material.103
+    2100032: Material.106
+    2100034: Material.109
+    2100036: Material.113
+    2100038: Material.114
+    2100040: Material.115
+    2100042: Material.116
+    2100044: Material.117
+    2100046: Material.118
+    2100048: Material.119
+    2100050: Material.120
+    2100052: Material.121
+    2100054: Material.122
+    2100056: Material.123
+    2100058: Material.124
+    2100060: Material.125
+    2100062: Material.126
+    2100064: Material.127
+    2100066: Material.128
+    2100068: Material.144
+    2100070: Material.143
+    2100072: Material.142
+    2100074: Material.141
+    2100076: Material.138
+    2100078: Material.135
+    2100080: Material.132
+    2100082: Material.129
+    2100084: Material.172
+    2100086: Material.171
+    2100088: Material.170
+    2100090: Material.169
+    2100092: Material.166
+    2100094: Material.163
+    2100096: Material.160
+    2100098: Material.157
+    2100100: Material.156
+    2100102: Material.155
+    2100104: Material.154
+    2100106: Material.153
+    2100108: Material.152
+    2100110: Material.151
+    2100112: Material.150
+    2100114: Material.149
+    2100116: Material.148
+    2100118: Material.147
+    2100120: Material.146
+    2100122: Material.145
+    2100124: Material.174
+    2100126: Material.173
+    2100128: Material.176
+    2100130: Material.175
+    2100132: Material.180
+    2100134: Material.178
+    2100136: Material.182
+    2100138: Material.181
+    2100140: Material.184
+    2100142: Material.183
+    2100144: Material.186
+    2100146: Material.185
+    2100148: Material.188
+    2100150: Material.187
+    2100152: Material.190
+    2100154: Material.189
+    2100156: Material.206
+    2100158: Material.205
+    2100160: Material.204
+    2100162: Material.203
+    2100164: Material.202
+    2100166: Material.201
+    2100168: Material.200
+    2100170: Material.199
+    2100172: Material.198
+    2100174: Material.197
+    2100176: Material.196
+    2100178: Material.195
+    2100180: Material.194
+    2100182: Material.193
+    2100184: Material.192
+    2100186: Material.191
+    2100188: Material.222
+    2100190: Material.221
+    2100192: Material.220
+    2100194: Material.219
+    2100196: Material.218
+    2100198: Material.217
+    2100200: Material.216
+    2100202: Material.215
+    2100204: Material.214
+    2100206: Material.213
+    2100208: Material.212
+    2100210: Material.211
+    2100212: Material.210
+    2100214: Material.209
+    2100216: Material.208
+    2100218: Material.207
+    2100220: Material.267
+    2100222: Material.266
+    2100224: Material.265
+    2100226: Material.264
+    2100228: Material.261
+    2100230: Material.258
+    2100232: Material.255
+    2100234: Material.252
+    2100236: Material.251
+    2100238: Material.250
+    2100240: Material.249
+    2100242: Material.248
+    2100244: Material.247
+    2100246: Material.246
+    2100248: Material.245
+    2100250: Material.244
+    2100252: Material.243
+    2100254: Material.242
+    2100256: Material.241
+    2100258: Material.240
+    2100260: Material.239
+    2100262: Material.238
+    2100264: Material.237
+    2100266: Material.236
+    2100268: Material.235
+    2100270: Material.234
+    2100272: Material.233
+    2100274: Material.232
+    2100276: Material.231
+    2100278: Material.230
+    2100280: Material.229
+    2100282: Material.228
+    2100284: Material.227
+    2100286: Material.226
+    2100288: Material.225
+    2100290: Material.224
+    2100292: Material.311
+    2100294: Material.310
+    2100296: Material.309
+    2100298: Material.308
+    2100300: Material.305
+    2100302: Material.302
+    2100304: Material.299
+    2100306: Material.296
+    2100308: Material.295
+    2100310: Material.294
+    2100312: Material.293
+    2100314: Material.292
+    2100316: Material.291
+    2100318: Material.290
+    2100320: Material.289
+    2100322: Material.288
+    2100324: Material.287
+    2100326: Material.286
+    2100328: Material.285
+    2100330: Material.284
+    2100332: Material.283
+    2100334: Material.282
+    2100336: Material.281
+    2100338: Material.280
+    2100340: Material.279
+    2100342: Material.278
+    2100344: Material.277
+    2100346: Material.276
+    2100348: Material.275
+    2100350: Material.274
+    2100352: Material.273
+    2100354: Material.272
+    2100356: Material.271
+    2100358: Material.270
+    2100360: Material.269
+    2100362: Material.268
+    2300000: Ceiling2 (U).001
+    2300002: Ceiling2 (U).002
+    2300004: Ceiling2 (U).003
+    2300006: Ceiling2 (U).004
+    2300008: Ceiling2 (U).005
+    2300010: Ceiling2 (U).006
+    2300012: Ceiling2 (U).007
+    2300014: Ceiling2 (U).008
+    2300016: Ceiling2 (U).009
+    2300018: Ceiling2 (U).010
+    2300020: Ceiling2 (U).011
+    2300022: Ceiling2 (U).012
+    2300024: Ceiling2 (U).013
+    2300026: Ceiling2 (U).014
+    2300028: Ceiling2 (U).015
+    2300030: Ceiling2 (U).016
+    2300032: Ceiling2 (U).017
+    2300034: Ceiling2 (U).018
+    2300036: Ceiling2 (U).019
+    2300038: Ceiling2 (U).020
+    2300040: Ceiling3 (U).001
+    2300042: Ceiling3 (U).002
+    2300044: Ceiling3 (U).003
+    2300046: Ceiling3 (U).004
+    2300048: Ceiling3 (U).005
+    2300050: Ceiling3 (U).006
+    2300052: Ceiling3 (U).007
+    2300054: Ceiling3 (U).008
+    2300056: Ceiling3 (U).009
+    2300058: Ceiling3 (U).010
+    2300060: Ceiling3 (U).011
+    2300062: Ceiling3 (U).012
+    2300064: Ceiling3 (U).013
+    2300066: Ceiling3 (U).014
+    2300068: Ceiling3 (U).015
+    2300070: Ceiling3 (U).016
+    2300072: Ceiling3 (U).017
+    2300074: Ceiling3 (U).018
+    2300076: Ceiling3 (U).019
+    2300078: Ceiling3 (U).020
+    2300080: Mast (U)
+    2300082: Pilar (U).003
+    2300084: Pilar (U).004
+    2300086: Pilar (U).005
+    2300088: Pilar (U).006
+    2300090: Roof
+    2300092: Wall1.001
+    2300094: Wall1.002
+    2300096: Wall1.003
+    2300098: Wall1.004
+    2300100: Wall1.005
+    2300102: Wall1.006
+    2300104: Wall1.007
+    2300106: Wall1.008
+    2300108: Wall1.009
+    2300110: Wall1.010
+    2300112: Wall1.011
+    2300114: Wall1.012
+    2300116: Wall1.013
+    2300118: Wall1.014
+    2300120: Wall1.015
+    2300122: Wall1.016
+    2300124: Wall1.017
+    2300126: Wall1.018
+    2300128: Wall1.019
+    2300130: Wall1.020
+    2300132: Wall1.021
+    2300134: Wall1.022
+    2300136: Wall1.023
+    2300138: Wall1.024
+    2300140: Wall1.025
+    2300142: Wall1.026
+    2300144: Wall1.027
+    2300146: Wall1.028
+    2300148: Wall1.029
+    2300150: Wall1.030
+    2300152: Wall1.031
+    2300154: Wall1.032
+    2300156: Wall1.033
+    2300158: Wall1.034
+    2300160: Wall1.035
+    2300162: Wall1.036
+    2300164: Wall1.037
+    2300166: Wall1.038
+    2300168: Wall1.039
+    2300170: Wall1.040
+    2300172: Wall1.041
+    2300174: Wall1.042
+    2300176: Wall1.043
+    2300178: Wall1.044
+    2300180: Wall1.045
+    2300182: Wall1.046
+    2300184: Wall1.047
+    2300186: Wall1.048
+    2300188: Wall2(U).001
+    2300190: Wall2(U).002
+    2300192: Wall2(U).003
+    2300194: Wall2(U).004
+    2300196: WFrame1(U).001
+    2300198: WFrame1(U).002
+    2300200: WFrame1(U).003
+    2300202: WFrame1(U).004
+    2300204: WFrame1(U).005
+    2300206: WFrame1(U).006
+    2300208: WFrame1(U).007
+    2300210: WFrame1(U).008
+    2300212: WFrame1(U).009
+    2300214: WFrame1(U).010
+    2300216: WFrame1(U).011
+    2300218: WFrame1(U).012
+    2300220: WFrame1(U).013
+    2300222: WFrame1(U).014
+    2300224: WFrame1(U).015
+    2300226: WFrame1(U).016
+    2300228: WFrame1(U).017
+    2300230: WFrame1(U).018
+    2300232: WFrame1(U).019
+    2300234: WFrame1(U).020
+    2300236: WFrame1(U).021
+    2300238: WFrame1(U).022
+    2300240: WFrame1(U).023
+    2300242: WFrame1(U).024
+    2300244: WFrame1(U).025
+    2300246: WFrame1(U).026
+    2300248: WFrame1(U).027
+    2300250: WFrame1(U).028
+    2300252: WFrame1(U).029
+    2300254: WFrame1(U).030
+    2300256: WFrame1(U).031
+    2300258: WFrame1(U).032
+    2300260: WFrame1(U).033
+    2300262: WFrame1(U).034
+    2300264: WFrame1(U).035
+    2300266: WFrame1(U).036
+    2300268: WFrame1(U).037
+    2300270: WFrame1(U).038
+    2300272: WFrame1(U).039
+    2300274: WFrame1(U).040
+    2300276: Window1(U).001
+    2300278: Window1(U).002
+    2300280: Window1(U).003
+    2300282: Window1(U).004
+    2300284: Window1(U).005
+    2300286: Window1(U).006
+    2300288: Window1(U).007
+    2300290: Window1(U).008
+    2300292: Window1(U).009
+    2300294: Window1(U).010
+    2300296: Window1(U).011
+    2300298: Window1(U).012
+    2300300: Window1(U).013
+    2300302: Window1(U).014
+    2300304: Window1(U).015
+    2300306: Window1(U).016
+    2300308: Window1(U).017
+    2300310: Window1(U).018
+    2300312: Window1(U).019
+    2300314: Window1(U).020
+    2300316: Window1(U).021
+    2300318: Window1(U).022
+    2300320: Window1(U).023
+    2300322: Window1(U).024
+    2300324: Window1(U).025
+    2300326: Window1(U).026
+    2300328: Window1(U).027
+    2300330: Window1(U).028
+    2300332: Window1(U).029
+    2300334: Window1(U).030
+    2300336: Window1(U).031
+    2300338: Window1(U).032
+    2300340: Window1(U).033
+    2300342: Window1(U).034
+    2300344: Window1(U).035
+    2300346: Window1(U).036
+    2300348: Window1(U).037
+    2300350: Window1(U).038
+    2300352: Window1(U).039
+    2300354: Window1(U).040
+    3300000: Ceiling2 (U).001
+    3300002: Ceiling2 (U).002
+    3300004: Ceiling2 (U).003
+    3300006: Ceiling2 (U).004
+    3300008: Ceiling2 (U).005
+    3300010: Ceiling2 (U).006
+    3300012: Ceiling2 (U).007
+    3300014: Ceiling2 (U).008
+    3300016: Ceiling2 (U).009
+    3300018: Ceiling2 (U).010
+    3300020: Ceiling2 (U).011
+    3300022: Ceiling2 (U).012
+    3300024: Ceiling2 (U).013
+    3300026: Ceiling2 (U).014
+    3300028: Ceiling2 (U).015
+    3300030: Ceiling2 (U).016
+    3300032: Ceiling2 (U).017
+    3300034: Ceiling2 (U).018
+    3300036: Ceiling2 (U).019
+    3300038: Ceiling2 (U).020
+    3300040: Ceiling3 (U).001
+    3300042: Ceiling3 (U).002
+    3300044: Ceiling3 (U).003
+    3300046: Ceiling3 (U).004
+    3300048: Ceiling3 (U).005
+    3300050: Ceiling3 (U).006
+    3300052: Ceiling3 (U).007
+    3300054: Ceiling3 (U).008
+    3300056: Ceiling3 (U).009
+    3300058: Ceiling3 (U).010
+    3300060: Ceiling3 (U).011
+    3300062: Ceiling3 (U).012
+    3300064: Ceiling3 (U).013
+    3300066: Ceiling3 (U).014
+    3300068: Ceiling3 (U).015
+    3300070: Ceiling3 (U).016
+    3300072: Ceiling3 (U).017
+    3300074: Ceiling3 (U).018
+    3300076: Ceiling3 (U).019
+    3300078: Ceiling3 (U).020
+    3300080: Mast (U)
+    3300082: Pilar (U).003
+    3300084: Pilar (U).004
+    3300086: Pilar (U).005
+    3300088: Pilar (U).006
+    3300090: Roof
+    3300092: Wall1.001
+    3300094: Wall1.002
+    3300096: Wall1.003
+    3300098: Wall1.004
+    3300100: Wall1.005
+    3300102: Wall1.006
+    3300104: Wall1.007
+    3300106: Wall1.008
+    3300108: Wall1.009
+    3300110: Wall1.010
+    3300112: Wall1.011
+    3300114: Wall1.012
+    3300116: Wall1.013
+    3300118: Wall1.014
+    3300120: Wall1.015
+    3300122: Wall1.016
+    3300124: Wall1.017
+    3300126: Wall1.018
+    3300128: Wall1.019
+    3300130: Wall1.020
+    3300132: Wall1.021
+    3300134: Wall1.022
+    3300136: Wall1.023
+    3300138: Wall1.024
+    3300140: Wall1.025
+    3300142: Wall1.026
+    3300144: Wall1.027
+    3300146: Wall1.028
+    3300148: Wall1.029
+    3300150: Wall1.030
+    3300152: Wall1.031
+    3300154: Wall1.032
+    3300156: Wall1.033
+    3300158: Wall1.034
+    3300160: Wall1.035
+    3300162: Wall1.036
+    3300164: Wall1.037
+    3300166: Wall1.038
+    3300168: Wall1.039
+    3300170: Wall1.040
+    3300172: Wall1.041
+    3300174: Wall1.042
+    3300176: Wall1.043
+    3300178: Wall1.044
+    3300180: Wall1.045
+    3300182: Wall1.046
+    3300184: Wall1.047
+    3300186: Wall1.048
+    3300188: Wall2(U).001
+    3300190: Wall2(U).002
+    3300192: Wall2(U).003
+    3300194: Wall2(U).004
+    3300196: WFrame1(U).001
+    3300198: WFrame1(U).002
+    3300200: WFrame1(U).003
+    3300202: WFrame1(U).004
+    3300204: WFrame1(U).005
+    3300206: WFrame1(U).006
+    3300208: WFrame1(U).007
+    3300210: WFrame1(U).008
+    3300212: WFrame1(U).009
+    3300214: WFrame1(U).010
+    3300216: WFrame1(U).011
+    3300218: WFrame1(U).012
+    3300220: WFrame1(U).013
+    3300222: WFrame1(U).014
+    3300224: WFrame1(U).015
+    3300226: WFrame1(U).016
+    3300228: WFrame1(U).017
+    3300230: WFrame1(U).018
+    3300232: WFrame1(U).019
+    3300234: WFrame1(U).020
+    3300236: WFrame1(U).021
+    3300238: WFrame1(U).022
+    3300240: WFrame1(U).023
+    3300242: WFrame1(U).024
+    3300244: WFrame1(U).025
+    3300246: WFrame1(U).026
+    3300248: WFrame1(U).027
+    3300250: WFrame1(U).028
+    3300252: WFrame1(U).029
+    3300254: WFrame1(U).030
+    3300256: WFrame1(U).031
+    3300258: WFrame1(U).032
+    3300260: WFrame1(U).033
+    3300262: WFrame1(U).034
+    3300264: WFrame1(U).035
+    3300266: WFrame1(U).036
+    3300268: WFrame1(U).037
+    3300270: WFrame1(U).038
+    3300272: WFrame1(U).039
+    3300274: WFrame1(U).040
+    3300276: Window1(U).001
+    3300278: Window1(U).002
+    3300280: Window1(U).003
+    3300282: Window1(U).004
+    3300284: Window1(U).005
+    3300286: Window1(U).006
+    3300288: Window1(U).007
+    3300290: Window1(U).008
+    3300292: Window1(U).009
+    3300294: Window1(U).010
+    3300296: Window1(U).011
+    3300298: Window1(U).012
+    3300300: Window1(U).013
+    3300302: Window1(U).014
+    3300304: Window1(U).015
+    3300306: Window1(U).016
+    3300308: Window1(U).017
+    3300310: Window1(U).018
+    3300312: Window1(U).019
+    3300314: Window1(U).020
+    3300316: Window1(U).021
+    3300318: Window1(U).022
+    3300320: Window1(U).023
+    3300322: Window1(U).024
+    3300324: Window1(U).025
+    3300326: Window1(U).026
+    3300328: Window1(U).027
+    3300330: Window1(U).028
+    3300332: Window1(U).029
+    3300334: Window1(U).030
+    3300336: Window1(U).031
+    3300338: Window1(U).032
+    3300340: Window1(U).033
+    3300342: Window1(U).034
+    3300344: Window1(U).035
+    3300346: Window1(U).036
+    3300348: Window1(U).037
+    3300350: Window1(U).038
+    3300352: Window1(U).039
+    3300354: Window1(U).040
+    4300000: Roof
+    4300002: Mast (U)
+    4300004: Pilar (U).003
+    4300006: Wall2(U).001
+    4300008: Pilar (U).004
+    4300010: Wall2(U).002
+    4300012: Pilar (U).005
+    4300014: Wall2(U).003
+    4300016: Pilar (U).006
+    4300018: Wall2(U).004
+    4300020: Ceiling3 (U).001
+    4300022: Ceiling3 (U).002
+    4300024: Ceiling3 (U).003
+    4300026: Ceiling3 (U).004
+    4300028: Ceiling2 (U).001
+    4300030: Ceiling2 (U).002
+    4300032: Ceiling2 (U).003
+    4300034: Ceiling2 (U).004
+    4300036: Wall1.001
+    4300038: Wall1.002
+    4300040: Wall1.003
+    4300042: Wall1.004
+    4300044: Wall1.005
+    4300046: Wall1.006
+    4300048: Wall1.007
+    4300050: Wall1.008
+    4300052: Wall1.009
+    4300054: Wall1.010
+    4300056: Wall1.011
+    4300058: Wall1.012
+    4300060: Ceiling2 (U).008
+    4300062: Ceiling2 (U).007
+    4300064: Ceiling2 (U).006
+    4300066: Ceiling2 (U).005
+    4300068: Ceiling3 (U).008
+    4300070: Ceiling3 (U).007
+    4300072: Ceiling3 (U).006
+    4300074: Ceiling3 (U).005
+    4300076: Ceiling2 (U).012
+    4300078: Ceiling2 (U).011
+    4300080: Ceiling2 (U).010
+    4300082: Ceiling2 (U).009
+    4300084: Ceiling3 (U).012
+    4300086: Ceiling3 (U).011
+    4300088: Ceiling3 (U).010
+    4300090: Ceiling3 (U).009
+    4300092: Wall1.024
+    4300094: Wall1.023
+    4300096: Wall1.022
+    4300098: Wall1.021
+    4300100: Wall1.020
+    4300102: Wall1.019
+    4300104: Wall1.018
+    4300106: Wall1.017
+    4300108: Wall1.016
+    4300110: Wall1.015
+    4300112: Wall1.014
+    4300114: Wall1.013
+    4300116: WFrame1(U).001
+    4300118: Window1(U).001
+    4300120: WFrame1(U).002
+    4300122: Window1(U).002
+    4300124: WFrame1(U).004
+    4300126: Window1(U).004
+    4300128: WFrame1(U).003
+    4300130: Window1(U).003
+    4300132: WFrame1(U).005
+    4300134: Window1(U).005
+    4300136: WFrame1(U).006
+    4300138: Window1(U).006
+    4300140: WFrame1(U).007
+    4300142: Window1(U).007
+    4300144: WFrame1(U).008
+    4300146: Window1(U).008
+    4300148: WFrame1(U).016
+    4300150: WFrame1(U).015
+    4300152: WFrame1(U).014
+    4300154: WFrame1(U).013
+    4300156: WFrame1(U).012
+    4300158: WFrame1(U).011
+    4300160: WFrame1(U).010
+    4300162: WFrame1(U).009
+    4300164: Window1(U).016
+    4300166: Window1(U).015
+    4300168: Window1(U).014
+    4300170: Window1(U).013
+    4300172: Window1(U).012
+    4300174: Window1(U).011
+    4300176: Window1(U).010
+    4300178: Window1(U).009
+    4300180: WFrame1(U).024
+    4300182: WFrame1(U).023
+    4300184: WFrame1(U).022
+    4300186: WFrame1(U).021
+    4300188: WFrame1(U).020
+    4300190: WFrame1(U).019
+    4300192: WFrame1(U).018
+    4300194: WFrame1(U).017
+    4300196: Window1(U).024
+    4300198: Window1(U).023
+    4300200: Window1(U).022
+    4300202: Window1(U).021
+    4300204: Window1(U).020
+    4300206: Window1(U).019
+    4300208: Window1(U).018
+    4300210: Window1(U).017
+    4300212: Ceiling2 (U).016
+    4300214: Ceiling2 (U).015
+    4300216: Ceiling2 (U).014
+    4300218: Ceiling2 (U).013
+    4300220: Ceiling3 (U).016
+    4300222: Ceiling3 (U).015
+    4300224: Ceiling3 (U).014
+    4300226: Ceiling3 (U).013
+    4300228: Wall1.036
+    4300230: Wall1.035
+    4300232: Wall1.034
+    4300234: Wall1.033
+    4300236: Wall1.032
+    4300238: Wall1.031
+    4300240: Wall1.030
+    4300242: Wall1.029
+    4300244: Wall1.028
+    4300246: Wall1.027
+    4300248: Wall1.026
+    4300250: Wall1.025
+    4300252: WFrame1(U).032
+    4300254: WFrame1(U).031
+    4300256: WFrame1(U).030
+    4300258: WFrame1(U).029
+    4300260: WFrame1(U).028
+    4300262: WFrame1(U).027
+    4300264: WFrame1(U).026
+    4300266: WFrame1(U).025
+    4300268: Window1(U).032
+    4300270: Window1(U).031
+    4300272: Window1(U).030
+    4300274: Window1(U).029
+    4300276: Window1(U).028
+    4300278: Window1(U).027
+    4300280: Window1(U).026
+    4300282: Window1(U).025
+    4300284: Ceiling2 (U).020
+    4300286: Ceiling2 (U).019
+    4300288: Ceiling2 (U).018
+    4300290: Ceiling2 (U).017
+    4300292: Ceiling3 (U).020
+    4300294: Ceiling3 (U).019
+    4300296: Ceiling3 (U).018
+    4300298: Ceiling3 (U).017
+    4300300: Wall1.048
+    4300302: Wall1.047
+    4300304: Wall1.046
+    4300306: Wall1.045
+    4300308: Wall1.044
+    4300310: Wall1.043
+    4300312: Wall1.042
+    4300314: Wall1.041
+    4300316: Wall1.040
+    4300318: Wall1.039
+    4300320: Wall1.038
+    4300322: Wall1.037
+    4300324: WFrame1(U).040
+    4300326: WFrame1(U).039
+    4300328: WFrame1(U).038
+    4300330: WFrame1(U).037
+    4300332: WFrame1(U).036
+    4300334: WFrame1(U).035
+    4300336: WFrame1(U).034
+    4300338: WFrame1(U).033
+    4300340: Window1(U).040
+    4300342: Window1(U).039
+    4300344: Window1(U).038
+    4300346: Window1(U).037
+    4300348: Window1(U).036
+    4300350: Window1(U).035
+    4300352: Window1(U).034
+    4300354: Window1(U).033
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
