@@ -21,6 +21,7 @@ public class NavMeshSetter : MonoBehaviour
         Silent,
         Conversation
     }
+    public Animator anim;
     public enum Animate
     {
         Idle,
@@ -115,7 +116,12 @@ public class NavMeshSetter : MonoBehaviour
                 }
                 else
                 {
-                    curTarget = Random.Range(0, target.Length);
+                    // curTarget = Random.Range(0, target.Length);
+                    if (agent.isStopped == false)
+                    {
+                        StartCoroutine(NextDestination());
+                    }
+                    agent.Stop();
                 }
             }
         }
@@ -123,6 +129,13 @@ public class NavMeshSetter : MonoBehaviour
         {
             agent.SetDestination(target[0].position);
         }
+    }
+
+    IEnumerator NextDestination()
+    {
+        yield return new WaitForSeconds(1);
+        curTarget = Random.Range(0, target.Length);
+        agent.Resume();
     }
 
     void TalkStuff()
@@ -246,6 +259,23 @@ public class NavMeshSetter : MonoBehaviour
                 {
                     curAnim = Animate.Walk;
                 }
+                break;
+
+        }
+        switch (curAnim)
+        {
+
+            case Animate.Idle:
+                anim.SetInteger("curAnim", 0);
+                break;
+            case Animate.Confused:
+                anim.SetInteger("curAnim", 1);
+                break;
+            case Animate.Cough:
+                anim.SetInteger("curAnim", 2);
+                break;
+            case Animate.Walk:
+                anim.SetInteger("curAnim", 3);
                 break;
         }
     }
