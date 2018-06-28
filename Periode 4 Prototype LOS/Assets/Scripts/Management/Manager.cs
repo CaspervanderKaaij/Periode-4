@@ -24,6 +24,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(1920,1080,true);
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         startText.SetActive(true);

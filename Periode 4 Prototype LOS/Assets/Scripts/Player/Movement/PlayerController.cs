@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         {
             for (int i = 0; i < uiCrosser.Length; i++)
             {
-                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color, Color.red, Time.deltaTime * 30);
+                uiCrosser[i].color = Color.Lerp(uiCrosser[i].color, Color.green, Time.deltaTime * 30);
             }
         }
         else
