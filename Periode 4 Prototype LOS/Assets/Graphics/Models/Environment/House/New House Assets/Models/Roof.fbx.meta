@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: acf3e3501c1da1047913fcae811f4b41
+guid: 3d7841dbee2fd0d4f9a10e41787f02a4
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: LowPolyRoof
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -84,7 +85,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
