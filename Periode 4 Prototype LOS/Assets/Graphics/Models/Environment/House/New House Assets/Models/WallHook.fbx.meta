@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7267507e5df05ae4aac3bedb9a3b4bc1
+guid: 6cf1d18aebce7fd4fba6bd66c27b4222
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +9,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: LowPolyWallHook
-    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -49,7 +48,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -85,7 +84,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

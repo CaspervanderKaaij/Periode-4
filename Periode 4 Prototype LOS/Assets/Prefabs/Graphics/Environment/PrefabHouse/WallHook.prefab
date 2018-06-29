@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4286371254737494}
   - component: {fileID: 33885988761904792}
   - component: {fileID: 23137845137050566}
-  - component: {fileID: 65016829494013972}
   m_Layer: 0
   m_Name: WallHook
   m_TagString: Untagged
@@ -57,7 +56,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: cee49316341fe1e48afc15d55d2c03da, type: 2}
+  - {fileID: 2100000, guid: 2e5ff77614b5ae04482f4b12dab70954, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,16 +82,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535577083651400}
-  m_Mesh: {fileID: 4300000, guid: 7267507e5df05ae4aac3bedb9a3b4bc1, type: 3}
---- !u!65 &65016829494013972
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1535577083651400}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 0.059999958, z: 0.88107836}
-  m_Center: {x: -1, y: 0, z: 0.44053942}
+  m_Mesh: {fileID: 4300000, guid: 6cf1d18aebce7fd4fba6bd66c27b4222, type: 3}
