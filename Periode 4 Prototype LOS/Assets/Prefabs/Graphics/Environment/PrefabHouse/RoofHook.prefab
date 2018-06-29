@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4472873809488344}
   - component: {fileID: 33466338121238366}
   - component: {fileID: 23335354042242418}
+  - component: {fileID: 64298087177186590}
   m_Layer: 0
   m_Name: RoofHook
   m_TagString: Untagged
@@ -82,4 +83,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229947566018482}
+  m_Mesh: {fileID: 4300000, guid: 823bd064ef6fd78428682039b57c5c9d, type: 3}
+--- !u!64 &64298087177186590
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229947566018482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 823bd064ef6fd78428682039b57c5c9d, type: 3}
