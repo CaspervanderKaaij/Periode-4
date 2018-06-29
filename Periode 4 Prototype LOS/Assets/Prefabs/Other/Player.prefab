@@ -222,7 +222,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1138607485377578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.381, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4105274087406804}
@@ -283,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 1286030390762610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4445966655781114}
   m_RootOrder: 1
@@ -294,15 +294,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1511471596375126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2672838, y: 1.4316403, z: 117.9759}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -33.17, y: 1.22, z: -55.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4445966655781114}
   - {fileID: 4798605883761570}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4796042284649304
 Transform:
   m_ObjectHideFlags: 1
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hookShotJumpStrength: 1.02
-  curState: 0
+  curState: 3
   hookShotJumping: 0
   headBob: 1
   uiCrosser:
@@ -720,9 +720,9 @@ MonoBehaviour:
   crosserHit: 1
   speed: 10
   rotSpeed: 500
-  velocity: {x: 0, y: 7, z: 0}
+  velocity: {x: 0, y: 1, z: 0}
   jumpCurrent: 0
-  jumpMax: 1
+  jumpMax: 2
 --- !u!114 &114762250510344630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,7 +827,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.67
-  m_Height: 2.16
+  m_Radius: 0.5
+  m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
