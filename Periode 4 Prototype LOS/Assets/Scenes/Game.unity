@@ -35114,6 +35114,47 @@ Prefab:
       propertyPath: m_Text
       value: Troop Movements
       objectReference: {fileID: 0}
+    - target: {fileID: 114117186646831682, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
+        type: 2}
+      propertyPath: curState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -86.159
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.221
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 44.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -51.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.41973653
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.907646
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -49.636
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
   m_IsPrefabParent: 0
