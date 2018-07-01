@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4457676204814612}
   - component: {fileID: 33608978016592330}
   - component: {fileID: 23249961410082900}
+  - component: {fileID: 65981279113103684}
+  - component: {fileID: 65107675636874694}
   m_Layer: 0
   m_Name: CWall
   m_TagString: Untagged
@@ -84,3 +86,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184026455044894}
   m_Mesh: {fileID: 4300000, guid: f482cad7252b16c4288d0168a8dd9d91, type: 3}
+--- !u!65 &65107675636874694
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1184026455044894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5971823, y: 3.622914, z: 20}
+  m_Center: {x: 2.8243246, y: 1.7185706, z: 10}
+--- !u!65 &65981279113103684
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1184026455044894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6229162, y: 1.5886483, z: 20}
+  m_Center: {x: 1.8114576, y: 0.7014377, z: 10}
