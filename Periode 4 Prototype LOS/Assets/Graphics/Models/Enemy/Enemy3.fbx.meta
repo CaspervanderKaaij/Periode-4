@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: b90d2fb0b117cd040b72695d6f72de03
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Boi
+    100002: Boi.001
+    100004: BOibackup.001
+    100006: breast.L
+    100008: breast.L 1
+    100010: breast.L_end
+    100012: breast.L_end 1
+    100014: breast.R
+    100016: breast.R 1
+    100018: breast.R_end
+    100020: breast.R_end 1
+    100022: //RootNode
+    100024: foot.L
+    100026: foot.L 1
+    100028: foot.R
+    100030: foot.R 1
+    100032: forearm.L
+    100034: forearm.L 1
+    100036: forearm.R
+    100038: forearm.R 1
+    100040: hand.L
+    100042: hand.L 1
+    100044: hand.L_end
+    100046: hand.L_end 1
+    100048: hand.R
+    100050: hand.R 1
+    100052: hand.R_end
+    100054: hand.R_end 1
+    100056: heel.02.L
+    100058: heel.02.L 1
+    100060: heel.02.L_end
+    100062: heel.02.L_end 1
+    100064: heel.02.R
+    100066: heel.02.R 1
+    100068: heel.02.R_end
+    100070: heel.02.R_end 1
+    100072: metarig
+    100074: metarig.001
+    100076: pelvis.L
+    100078: pelvis.L 1
+    100080: pelvis.L_end
+    100082: pelvis.L_end 1
+    100084: pelvis.R
+    100086: pelvis.R 1
+    100088: pelvis.R_end
+    100090: pelvis.R_end 1
+    100092: shin.L
+    100094: shin.L 1
+    100096: shin.R
+    100098: shin.R 1
+    100100: shoulder.L
+    100102: shoulder.L 1
+    100104: shoulder.R
+    100106: shoulder.R 1
+    100108: spine
+    100110: spine 1
+    100112: spine.001
+    100114: spine.001 1
+    100116: spine.002
+    100118: spine.002 1
+    100120: spine.003
+    100122: spine.003 1
+    100124: spine.004
+    100126: spine.004 1
+    100128: spine.005
+    100130: spine.005 1
+    100132: spine.006
+    100134: spine.006 1
+    100136: spine.006_end
+    100138: spine.006_end 1
+    100140: thigh.L
+    100142: thigh.L 1
+    100144: thigh.L.001
+    100146: thigh.L.001_end
+    100148: thigh.L.002
+    100150: thigh.L.002_end
+    100152: thigh.L.003
+    100154: thigh.L.003_end
+    100156: thigh.L.004
+    100158: thigh.L.004_end
+    100160: thigh.R
+    100162: thigh.R 1
+    100164: thigh.R.001
+    100166: thigh.R.001_end
+    100168: thigh.R.002
+    100170: thigh.R.002_end
+    100172: toe.L
+    100174: toe.L 1
+    100176: toe.L_end
+    100178: toe.L_end 1
+    100180: toe.R
+    100182: toe.R 1
+    100184: toe.R_end
+    100186: toe.R_end 1
+    100188: upper_arm.L
+    100190: upper_arm.L 1
+    100192: upper_arm.R
+    100194: upper_arm.R 1
+    400000: Boi
+    400002: Boi.001
+    400004: BOibackup.001
+    400006: breast.L
+    400008: breast.L 1
+    400010: breast.L_end
+    400012: breast.L_end 1
+    400014: breast.R
+    400016: breast.R 1
+    400018: breast.R_end
+    400020: breast.R_end 1
+    400022: //RootNode
+    400024: foot.L
+    400026: foot.L 1
+    400028: foot.R
+    400030: foot.R 1
+    400032: forearm.L
+    400034: forearm.L 1
+    400036: forearm.R
+    400038: forearm.R 1
+    400040: hand.L
+    400042: hand.L 1
+    400044: hand.L_end
+    400046: hand.L_end 1
+    400048: hand.R
+    400050: hand.R 1
+    400052: hand.R_end
+    400054: hand.R_end 1
+    400056: heel.02.L
+    400058: heel.02.L 1
+    400060: heel.02.L_end
+    400062: heel.02.L_end 1
+    400064: heel.02.R
+    400066: heel.02.R 1
+    400068: heel.02.R_end
+    400070: heel.02.R_end 1
+    400072: metarig
+    400074: metarig.001
+    400076: pelvis.L
+    400078: pelvis.L 1
+    400080: pelvis.L_end
+    400082: pelvis.L_end 1
+    400084: pelvis.R
+    400086: pelvis.R 1
+    400088: pelvis.R_end
+    400090: pelvis.R_end 1
+    400092: shin.L
+    400094: shin.L 1
+    400096: shin.R
+    400098: shin.R 1
+    400100: shoulder.L
+    400102: shoulder.L 1
+    400104: shoulder.R
+    400106: shoulder.R 1
+    400108: spine
+    400110: spine 1
+    400112: spine.001
+    400114: spine.001 1
+    400116: spine.002
+    400118: spine.002 1
+    400120: spine.003
+    400122: spine.003 1
+    400124: spine.004
+    400126: spine.004 1
+    400128: spine.005
+    400130: spine.005 1
+    400132: spine.006
+    400134: spine.006 1
+    400136: spine.006_end
+    400138: spine.006_end 1
+    400140: thigh.L
+    400142: thigh.L 1
+    400144: thigh.L.001
+    400146: thigh.L.001_end
+    400148: thigh.L.002
+    400150: thigh.L.002_end
+    400152: thigh.L.003
+    400154: thigh.L.003_end
+    400156: thigh.L.004
+    400158: thigh.L.004_end
+    400160: thigh.R
+    400162: thigh.R 1
+    400164: thigh.R.001
+    400166: thigh.R.001_end
+    400168: thigh.R.002
+    400170: thigh.R.002_end
+    400172: toe.L
+    400174: toe.L 1
+    400176: toe.L_end
+    400178: toe.L_end 1
+    400180: toe.R
+    400182: toe.R 1
+    400184: toe.R_end
+    400186: toe.R_end 1
+    400188: upper_arm.L
+    400190: upper_arm.L 1
+    400192: upper_arm.R
+    400194: upper_arm.R 1
+    2100000: Material.007
+    2100002: Material.003
+    2100004: Material.006
+    2100006: Material.005
+    2100008: Material.004
+    2300000: BOibackup.001
+    3300000: BOibackup.001
+    4300000: Boi
+    4300002: BOibackup.001
+    4300004: Boi.001
+    7400000: Walk
+    7400002: Cough
+    7400004: Confused
+    7400006: Idle
+    9500000: //RootNode
+    13700000: Boi
+    13700002: Boi.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: metarig|metarigAction
+      firstFrame: 1
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cough
+      takeName: metarig|metarigAction
+      firstFrame: 40
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Confused
+      takeName: metarig|metarigAction
+      firstFrame: 77
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: metarig|metarigAction
+      firstFrame: 135
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
