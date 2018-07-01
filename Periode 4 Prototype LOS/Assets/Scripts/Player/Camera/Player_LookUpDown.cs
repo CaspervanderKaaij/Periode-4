@@ -9,18 +9,11 @@ public class Player_LookUpDown : MonoBehaviour
     //plyr stuff door Casper
     PlayerController plyr;
 
-    //Screenshake door Casper
-    bool shaking = true;
-    Transform toShake;
-    Vector3 oldPos;
-    public float shakeAmount = 0.3f;
 
     void Start()
     {
         plyr = FindObjectOfType<PlayerController>();
-        shaking = false;
-        toShake = Camera.main.transform;
-        oldPos = toShake.localPosition;
+
     }
 
     void Update()
@@ -30,27 +23,6 @@ public class Player_LookUpDown : MonoBehaviour
             Look();
         }
 
-        //screenshake door Casper
-
-        toShake.localPosition = oldPos;
-        // if (Input.GetButtonDown("Fire1"))
-        //  {
-        if (plyr.curState == PlayerController.State.HookShotEnd)
-        {
-            StartShake(0.2f);
-        }
-        // }
-        if (shaking == true)
-        {
-            if (Time.timeScale != 1)
-            {
-                Shake();
-            }
-        }
-        else
-        {
-            oldPos = toShake.localPosition;
-        }
     }
 
     private void Look()
@@ -60,22 +32,5 @@ public class Player_LookUpDown : MonoBehaviour
         transform.eulerAngles = (new Vector3(r.x, transform.eulerAngles.y, 0.0f));
     }
 
-    void Shake()
-    {
-        oldPos = toShake.localPosition;
-        toShake.localPosition += new Vector3(Random.Range(-shakeAmount, shakeAmount), Random.Range(-shakeAmount, shakeAmount), Random.Range(-shakeAmount, shakeAmount));
-    }
-
-    public void StartShake(float time)
-    {
-        shaking = true;
-        StopAllCoroutines();
-        StartCoroutine(StopShake(time));
-    }
-
-    IEnumerator StopShake(float time)
-    {
-        yield return new WaitForSeconds(time);
-        shaking = false;
-    }
+    
 }
