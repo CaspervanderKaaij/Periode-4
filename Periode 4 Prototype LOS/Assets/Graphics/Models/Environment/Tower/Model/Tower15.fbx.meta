@@ -885,6 +885,7 @@ ModelImporter:
     2300574: Window.045
     2300576: Window.046
     2300578: Window.047
+    2300580: //RootNode
     3300000: CCeiling
     3300002: CCeiling.001
     3300004: CCeiling.002
@@ -1175,6 +1176,7 @@ ModelImporter:
     3300574: Window.045
     3300576: Window.046
     3300578: Window.047
+    3300580: //RootNode
     4300000: Roof
     4300002: Mast
     4300004: PWall
