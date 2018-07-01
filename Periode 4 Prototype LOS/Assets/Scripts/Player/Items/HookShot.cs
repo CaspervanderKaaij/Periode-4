@@ -9,13 +9,32 @@ public class HookShot : MonoBehaviour
     public float speed = 100;
     public float range = 100;
     public Transform UITarget;
+    public Renderer[] model;
+    public Vector3[] dontedit;
+    LineRenderer rope;
     void Start()
     {
         plyr = transform.parent.parent.GetComponent<PlayerController>();
+        rope = model[1].GetComponent<LineRenderer>();
     }
 
     void Update()
     {
+
+        if(plyr.curState == PlayerController.State.HookShot){
+            model[0].enabled = false;
+            model[1].enabled = true;
+            dontedit[0] = model[1].transform.position;
+            dontedit[1] = plyr.transform.position;
+            rope.SetPositions(dontedit);
+        } else {
+            model[0].enabled = true;
+            model[1].enabled = false;
+            dontedit[0] = Vector3.zero;
+            dontedit[1] = Vector3.zero;
+            rope.SetPositions(dontedit);
+        }
+
         //Debug.DrawRay(transform.parent.position,transform.parent.forward,Color.red,0.001f);
         plyr.crosserHit = false;
         if (Input.GetButtonDown("Fire1"))
@@ -28,6 +47,7 @@ public class HookShot : MonoBehaviour
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit, 100))
             {
                 UITarget.position = hit.point;
+                UITarget.LookAt(plyr.transform.position);
                 if (CheckState() == true)
                 {
                     plyr.crosserHit = true;
