@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class DetectionBar : MonoBehaviour
 {
 
+    public AudioClip normalMusic;
+    public AudioClip spottedMusic;
+    AudioSource music;
+    float musicTimer = 0;
     public List<bool> enemySeers;
     public List<EnemyLOS> enemies;
     int seers = 0;
@@ -19,6 +23,7 @@ public class DetectionBar : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        music = transform.GetComponent<AudioSource>();
         detectionLevel = 0;
         enemies.AddRange(FindObjectsOfType<EnemyLOS>());
         for (int i = 0; i < enemies.Count; i++)
@@ -26,45 +31,6 @@ public class DetectionBar : MonoBehaviour
             enemySeers.Add(false);
         }
     }
-
-    /*
-    void Update () {
-        //raycast voor detection
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 50.0f))
-        {
-            if (hit.transform.tag == "Player")
-            {
-                //check of detection nog niet max is
-                if(detectionLevel < 100.0f)
-                {
-                    //detection level omhoog
-                    print("detecting");
-                    detectionLevel += Time.deltaTime * 10;
-                    if (detectionLevel > 100)
-                    {
-                        detectionLevel = 100;
-                    }
-                }
-                // als detection max is, game over
-                else
-                {
-                    print("detected, game over");
-                }
-            }
-            // als je niet detect word, detection level omlaag
-            else
-            {
-                detectionLevel -= Time.deltaTime * 5;
-                if(detectionLevel < 0){
-                    detectionLevel = 0;
-                }
-            }
-        }
-        //update UI
-        detectSlider.value = detectionLevel;
-        percentage.text = "Detection percentage: " + detectionLevel.ToString("f0");
-    }
-	 */
 
     void Update()
     {
@@ -111,6 +77,16 @@ public class DetectionBar : MonoBehaviour
 
     public void OnDetect()
     {
+
+        if (music.clip != spottedMusic)
+        {
+            music.Stop();
+            music.clip = spottedMusic;
+            music.Play();
+            musicTimer = 5;
+            music.volume = 0.5f;
+        }
+
         if (detectionLevel < 100.0f)
         {
             //detection level omhoog
@@ -131,6 +107,21 @@ public class DetectionBar : MonoBehaviour
 
     public void OffDetect()
     {
+        if (music.clip != normalMusic)
+        {
+            if (musicTimer <= 0)
+            {
+                music.Stop();
+                music.clip = normalMusic;
+                music.Play();
+                music.volume = 1;
+            }
+            else
+            {
+                musicTimer -= Time.deltaTime;
+                music.volume = Mathf.Min(0.5f, musicTimer / 4);
+            }
+        }
         //detectionLevel -= Time.deltaTime * 5;
         if (detectionLevel < 0)
         {
