@@ -58,6 +58,49 @@ ModelImporter:
     100104: toe.R_end
     100106: upper_arm.L
     100108: upper_arm.R
+    100110: Boi.001
+    100112: BOibackup.001
+    100114: breast.L 1
+    100116: breast.L_end 1
+    100118: breast.R 1
+    100120: breast.R_end 1
+    100122: foot.L 1
+    100124: foot.R 1
+    100126: forearm.L 1
+    100128: forearm.R 1
+    100130: hand.L 1
+    100132: hand.L_end 1
+    100134: hand.R 1
+    100136: hand.R_end 1
+    100138: heel.02.L 1
+    100140: heel.02.L_end 1
+    100142: heel.02.R 1
+    100144: heel.02.R_end 1
+    100146: metarig.001
+    100148: pelvis.L 1
+    100150: pelvis.L_end 1
+    100152: pelvis.R 1
+    100154: pelvis.R_end 1
+    100156: shin.L 1
+    100158: shin.R 1
+    100160: shoulder.L 1
+    100162: shoulder.R 1
+    100164: spine 1
+    100166: spine.001 1
+    100168: spine.002 1
+    100170: spine.003 1
+    100172: spine.004 1
+    100174: spine.005 1
+    100176: spine.006 1
+    100178: spine.006_end 1
+    100180: thigh.L 1
+    100182: thigh.R 1
+    100184: toe.L 1
+    100186: toe.L_end 1
+    100188: toe.R 1
+    100190: toe.R_end 1
+    100192: upper_arm.L 1
+    100194: upper_arm.R 1
     400000: Boi
     400002: breast.L
     400004: breast.L_end
@@ -113,11 +156,63 @@ ModelImporter:
     400104: toe.R_end
     400106: upper_arm.L
     400108: upper_arm.R
+    400110: Boi.001
+    400112: BOibackup.001
+    400114: breast.L 1
+    400116: breast.L_end 1
+    400118: breast.R 1
+    400120: breast.R_end 1
+    400122: foot.L 1
+    400124: foot.R 1
+    400126: forearm.L 1
+    400128: forearm.R 1
+    400130: hand.L 1
+    400132: hand.L_end 1
+    400134: hand.R 1
+    400136: hand.R_end 1
+    400138: heel.02.L 1
+    400140: heel.02.L_end 1
+    400142: heel.02.R 1
+    400144: heel.02.R_end 1
+    400146: metarig.001
+    400148: pelvis.L 1
+    400150: pelvis.L_end 1
+    400152: pelvis.R 1
+    400154: pelvis.R_end 1
+    400156: shin.L 1
+    400158: shin.R 1
+    400160: shoulder.L 1
+    400162: shoulder.R 1
+    400164: spine 1
+    400166: spine.001 1
+    400168: spine.002 1
+    400170: spine.003 1
+    400172: spine.004 1
+    400174: spine.005 1
+    400176: spine.006 1
+    400178: spine.006_end 1
+    400180: thigh.L 1
+    400182: thigh.R 1
+    400184: toe.L 1
+    400186: toe.L_end 1
+    400188: toe.R 1
+    400190: toe.R_end 1
+    400192: upper_arm.L 1
+    400194: upper_arm.R 1
     2100000: Material.007
+    2100002: Material.003
+    2100004: Material.006
+    2100006: Material.005
+    2100008: Material.004
+    2300000: BOibackup.001
+    3300000: BOibackup.001
     4300000: Boi
+    4300002: BOibackup.001
+    4300004: Boi.001
     7400000: EnemyWalk
     9500000: //RootNode
     13700000: Boi
+    13700002: Boi.001
   externalObjects: {}
   materials:
     importMaterials: 1
