@@ -35093,67 +35093,10 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114464806307515712, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
+    - target: {fileID: 114731972578104118, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
         type: 2}
-      propertyPath: m_Text
-      value: 'In order for us to make our next move we need the troop movements of
-        the Ashikaga shogunate. Steal them from the tower they use as their base in
-        the city without being seen.
-
-
-
-        Press any key to continue.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 102935395022125652, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
-        type: 2}
-      propertyPath: m_Text
-      value: Troop Movements
-      objectReference: {fileID: 0}
-    - target: {fileID: 102194359889979102, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
-        type: 2}
-      propertyPath: m_Text
-      value: Troop Movements
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117186646831682, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e,
-        type: 2}
-      propertyPath: curState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -86.159
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -9.221
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130885116904800, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9.435
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 44.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -51.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.41973653
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.907646
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319012575326822, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -49.636
+      propertyPath: nextLevel
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b8f8b1c7d16bf34d8748dbee6b2c09e, type: 2}

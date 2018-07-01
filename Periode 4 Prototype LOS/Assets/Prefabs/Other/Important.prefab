@@ -585,7 +585,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1169699189068922}
   m_LocalRotation: {x: 0.46193978, y: 0.19134173, z: 0.19134173, w: 0.84462327}
-  m_LocalPosition: {x: -20.661, y: 4.28, z: -243.92}
+  m_LocalPosition: {x: -9.221, y: 9.435, z: -86.159}
   m_LocalScale: {x: 0.15008408, y: 0.15008412, z: 0.15008411}
   m_Children:
   - {fileID: 4117327883332172}
@@ -626,15 +626,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1533684810535954}
-  m_LocalRotation: {x: -0, y: -0.088995524, z: -0, w: 0.99603206}
-  m_LocalPosition: {x: 28.41, y: 4.57, z: -40.54}
+  m_LocalRotation: {x: -0, y: -0.41973653, z: -0, w: 0.907646}
+  m_LocalPosition: {x: 44.28, y: 7.67, z: -51.55}
   m_LocalScale: {x: 22.042316, y: 5.962778, z: 8.01706}
   m_Children:
   - {fileID: 4578951495845434}
   - {fileID: 4698553592069836}
   m_Father: {fileID: 4729115654481950}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -10.212001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -49.636, z: 0}
 --- !u!4 &4400209717401874
 Transform:
   m_ObjectHideFlags: 1
@@ -1064,7 +1064,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1693632276229018}
-  m_Text: Key
+  m_Text: Troop Movements
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1106,7 +1106,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1701261659690936}
-  m_Text: Key
+  m_Text: Troop Movements
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42b2f2b58575df45a028a2404583d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curState: 1
+  curState: 0
   parent: {fileID: 0}
 --- !u!114 &114120073400081408
 MonoBehaviour:
@@ -1542,9 +1542,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.49
-  m_Text: 'Retrieve the scroll containing Ashikaga''s troop movements.
-
-    It has been hidden by our shinobi near their base.
+  m_Text: 'In order for us to make our next move we need the troop movements of the
+    Ashikaga shogunate. Steal them from the tower they use as their base in the city
+    without being seen.
 
 
 
