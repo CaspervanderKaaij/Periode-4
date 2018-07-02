@@ -15,25 +15,28 @@ public class ExplodeSmokeBomb : MonoBehaviour
 
     public float smokeRadius;
 
-    private GameObject smokeSphere;
+    public GameObject smokeSphere;
     public GameObject smokeParticles;
 
     private bool hasExploded;
 
     void Start()
     {
-        smokeSphere = transform.GetChild(0).gameObject;
         smokeSphere.transform.localScale *= smokeRadius;
 
         countdownToExplode = timeToExplode;
         countdownToDestroySmoke = timeToDestroySmoke;
         countdownToDestroyBomb = timeToDestroyBomb;
+
+        smokeSphere.SetActive(false);
+        smokeParticles.SetActive(false);
     }
 
     void Update()
     {
         countdownToExplode -= Time.deltaTime;
 
+        transform.rotation = Quaternion.Euler(0, 0, 0);
         if (countdownToExplode <= 0 && hasExploded == false)
         {
             Explode();
@@ -53,6 +56,7 @@ public class ExplodeSmokeBomb : MonoBehaviour
             if (countdownToDestroySmoke <= 0)
             {
                 smokeSphere.SetActive(false);
+                smokeParticles.SetActive(false);
             }
         }
     }
@@ -65,7 +69,6 @@ public class ExplodeSmokeBomb : MonoBehaviour
         Rigidbody smokeRigidbody = transform.GetComponent<Rigidbody>();
         smokeRigidbody.constraints = RigidbodyConstraints.FreezePositionX;
         smokeRigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
-
-        //GameObject myParticles = Instantiate(smokeParticles, smokeSphere.transform.position, Quaternion.identity);
+        smokeParticles.SetActive(true);
     }
 }
