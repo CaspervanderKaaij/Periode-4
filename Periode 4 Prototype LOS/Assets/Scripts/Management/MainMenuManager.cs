@@ -109,7 +109,7 @@ public class MainMenuManager : MonoBehaviour
             {
 
                 case MenuOptions.NewGame:
-					SceneManager.LoadScene(2);
+					SceneManager.LoadScene(3);
 					loadObject.SetActive(true);
                     break;
                 case MenuOptions.LoadGame:
