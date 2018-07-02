@@ -1022,6 +1022,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1535164877035672
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4974547978478730}
+  m_Layer: 2
+  m_Name: ItemPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1567660562157282
 GameObject:
   m_ObjectHideFlags: 1
@@ -2392,7 +2407,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623617593263166}
   m_LocalRotation: {x: 0.00001046613, y: -0.0003862083, z: 0.000092757895, w: 1}
-  m_LocalPosition: {x: -0.093, y: -1.012, z: 0.074}
+  m_LocalPosition: {x: -0.093, y: -1.194, z: 0.074}
   m_LocalScale: {x: 1.3800079, y: 1.3800076, z: 1.380007}
   m_Children:
   - {fileID: 4948151160649348}
@@ -2676,6 +2691,7 @@ Transform:
   - {fileID: 4462312103300884}
   - {fileID: 4758763439029730}
   - {fileID: 4315296685350054}
+  - {fileID: 4974547978478730}
   m_Father: {fileID: 4973214079609186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -89.956, z: 0}
@@ -3489,7 +3505,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1723967424950234}
   m_LocalRotation: {x: 0.00005816111, y: 0.70710915, z: -0.00007301268, w: 0.7071045}
-  m_LocalPosition: {x: -73.31, y: 1.112, z: -90.03}
+  m_LocalPosition: {x: -51.75376, y: 3.1707907, z: -50.125343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4479990567373272}
@@ -3503,6 +3519,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.011000001, y: 90.00001, z: -0.001}
+--- !u!4 &4974547978478730
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535164877035672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.512, z: 0.087}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4479990567373272}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20707322695732506
 Camera:
   m_ObjectHideFlags: 1
@@ -4501,7 +4530,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b90d2fb0b117cd040b72695d6f72de03, type: 3}
+  - {fileID: 2100000, guid: 2fc7667df186af347a80b9097e5cd144, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

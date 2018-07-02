@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4286371254737494}
   - component: {fileID: 33885988761904792}
   - component: {fileID: 23137845137050566}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WallHook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
