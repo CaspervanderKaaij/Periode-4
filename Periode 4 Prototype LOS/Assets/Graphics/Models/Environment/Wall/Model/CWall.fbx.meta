@@ -7,9 +7,11 @@ ModelImporter:
     400000: //RootNode
     2100000: Material.000
     2100002: Material.001
+    2100004: Material.005
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube.001
+    4300002: Cube.000
   externalObjects: {}
   materials:
     importMaterials: 1
