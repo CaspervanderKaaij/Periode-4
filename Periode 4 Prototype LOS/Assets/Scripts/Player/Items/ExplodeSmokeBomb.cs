@@ -71,4 +71,6 @@ public class ExplodeSmokeBomb : MonoBehaviour
         smokeRigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
         smokeParticles.SetActive(true);
     }
+
+    //
 }
