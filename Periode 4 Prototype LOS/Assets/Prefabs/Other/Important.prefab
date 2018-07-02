@@ -585,7 +585,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1169699189068922}
   m_LocalRotation: {x: 0.46193978, y: 0.19134173, z: 0.19134173, w: 0.84462327}
-  m_LocalPosition: {x: -9.221, y: 9.435, z: -86.159}
+  m_LocalPosition: {x: 44.88, y: 7.28, z: -11.3}
   m_LocalScale: {x: 0.15008408, y: 0.15008412, z: 0.15008411}
   m_Children:
   - {fileID: 4117327883332172}
@@ -626,15 +626,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1533684810535954}
-  m_LocalRotation: {x: -0, y: -0.41973653, z: -0, w: 0.907646}
-  m_LocalPosition: {x: 44.28, y: 7.67, z: -51.55}
+  m_LocalRotation: {x: -0, y: 0.001432863, z: -0, w: 0.999999}
+  m_LocalPosition: {x: -15.63, y: 4.16, z: -127.39}
   m_LocalScale: {x: 22.042316, y: 5.962778, z: 8.01706}
   m_Children:
   - {fileID: 4578951495845434}
   - {fileID: 4698553592069836}
   m_Father: {fileID: 4729115654481950}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -49.636, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.164, z: 0}
 --- !u!4 &4400209717401874
 Transform:
   m_ObjectHideFlags: 1
@@ -1043,7 +1043,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1664644452606648}
-  m_Text: Locked Door
+  m_Text: Escape
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1085,7 +1085,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1747475877395676}
-  m_Text: Locked Door
+  m_Text: Escape
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1643,7 +1643,7 @@ MonoBehaviour:
   objectiveText: {fileID: 114279626394999268}
   paused: 0
   timeScale: 1
-  nextLevel: 0
+  nextLevel: 1
 --- !u!114 &114857840818233942
 MonoBehaviour:
   m_ObjectHideFlags: 1
