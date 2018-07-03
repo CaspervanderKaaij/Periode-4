@@ -27,7 +27,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4176002439572170
 Transform:
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 102
-  materialHash: 5e059cdd175fb96c9fbbe75e04e30318215482368
+  materialHash: 2d8be05c019f5e000da201cb3a961f18215482368
   root:
     _uniqueID: 1
     seed: 1234
@@ -438,17 +438,17 @@ MonoBehaviour:
     rootSpread: 0
     groundOffset: 0
     rootMatrix:
-      e00: 1
-      e01: 0
-      e02: 0
+      e00: 0.90825725
+      e01: -0
+      e02: 0.41841224
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: 0
+      e20: -0.41841224
       e21: 0
-      e22: 1
+      e22: 0.90825725
       e23: 0
       e30: 0
       e31: 0
@@ -812,17 +812,17 @@ MonoBehaviour:
     pitch: -0
     rotation: {x: 0, y: 0, z: 0, w: 1}
     matrix:
-      e00: 1
-      e01: 0
-      e02: 0
+      e00: 0.90825725
+      e01: -0
+      e02: 0.41841224
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: 0
+      e20: -0.41841224
       e21: 0
-      e22: 1
+      e22: 0.90825725
       e23: 0
       e30: 0
       e31: 0

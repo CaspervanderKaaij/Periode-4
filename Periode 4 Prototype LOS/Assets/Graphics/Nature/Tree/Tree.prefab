@@ -28,7 +28,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4057595241767438
 Transform:
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 971
-  materialHash: 788b025ab5779af63d8be763f6bbdde5215482368
+  materialHash: fc46105783770562a3068242514b741d215482368
   root:
     _uniqueID: 1
     seed: 1234
